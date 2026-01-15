@@ -14,25 +14,31 @@
 
 /* Override theme defaults with !important to ensure our styles apply */
 body .wrapper {
-  max-width: 1200px !important;
+  max-width: 1400px !important;
   margin: 0 auto !important;
   display: grid !important;
-  grid-template-columns: 280px 1fr !important;
-  gap: 3rem !important;
-  padding: 2rem !important;
+  grid-template-columns: 300px 1fr !important;
+  gap: 2.5rem !important;
+  padding: 2rem 2rem 2rem 340px !important;
   background-color: #ffffff !important;
 }
 
 body header {
   grid-column: 1 !important;
-  position: sticky !important;
+  position: fixed !important;
+  left: 2rem !important;
   top: 2rem !important;
+  width: 300px !important;
+  max-height: calc(100vh - 4rem) !important;
+  overflow-y: auto !important;
   padding: 2rem !important;
-  background-color: var(--bg-light) !important;
-  border-radius: 8px !important;
-  border: 1px solid var(--border-color) !important;
+  background: linear-gradient(135deg, var(--primary-light) 0%, #f8fbff 100%) !important;
+  border-radius: 12px !important;
+  border: 2px solid var(--primary-color) !important;
+  box-shadow: 0 10px 30px rgba(3, 102, 214, 0.1) !important;
   width: auto !important;
   float: none !important;
+  z-index: 100 !important;
 }
 
 body header h1 {
@@ -52,6 +58,7 @@ body footer {
   border-top: 2px solid var(--border-color) !important;
   padding-top: 2rem !important;
   margin-top: 3rem !important;
+  margin-left: 340px !important;
   text-align: center !important;
 }
 
@@ -99,45 +106,57 @@ body h1 {
   padding-bottom: 0.5em !important;
   margin-bottom: 1em !important;
   margin-top: 0 !important;
-  font-size: 2em !important;
+  font-size: 2.2em !important;
   color: var(--primary-dark) !important;
+  font-weight: 700 !important;
 }
 
 body h2 {
-  border-bottom: 2px solid var(--border-color) !important;
+  border-bottom: 2px solid var(--primary-color) !important;
   padding-bottom: 0.4em !important;
-  margin-top: 2em !important;
+  margin-top: 2.2em !important;
   margin-bottom: 1em !important;
-  font-size: 1.5em !important;
+  font-size: 1.6em !important;
   color: var(--primary-dark) !important;
+  font-weight: 600 !important;
 }
 
 body h3 {
-  margin-top: 1.5em !important;
-  margin-bottom: 0.6em !important;
+  margin-top: 1.8em !important;
+  margin-bottom: 0.8em !important;
   color: var(--primary-dark) !important;
+  font-size: 1.3em !important;
+  font-weight: 600 !important;
 }
 
 header {
   grid-column: 1;
-  position: sticky;
+  position: fixed;
+  left: 2rem;
   top: 2rem;
+  width: 300px;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
   padding: 2rem;
-  background-color: var(--bg-light);
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
+  background: linear-gradient(135deg, var(--primary-light) 0%, #f8fbff 100%);
+  border-radius: 12px;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 10px 30px rgba(3, 102, 214, 0.1);
   width: auto !important;
   float: none !important;
 }
 
 header h1 {
   margin-top: 0 !important;
+  font-size: 1.5em !important;
+  margin-bottom: 0.8em !important;
 }
 
 header p {
-  margin: 0.8em 0;
-  line-height: 1.6;
+  margin: 0.6em 0;
+  line-height: 1.5;
   color: var(--text-secondary);
+  font-size: 0.95em;
 }
 
 header img {
@@ -147,19 +166,51 @@ header img {
   border-radius: 8px;
 }
 
+/* Sidebar section dividers */
+header p + p::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+  margin: 1.2em 0 0.8em;
+}
+
 /* Better link styling */
 body a {
   color: var(--primary-color) !important;
   text-decoration: none;
-  transition: var(--transition);
+  transition: all 0.2s ease;
   border-radius: 3px;
   padding: 0.15em 0.3em;
+  position: relative;
+}
+
+body a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+body a:hover::after {
+  width: 100%;
 }
 
 body a:hover {
   color: var(--primary-hover) !important;
-  text-decoration: underline;
-  background-color: var(--primary-light);
+}
+
+section a {
+  padding: 0.3em 0.5em !important;
+}
+
+section a::after {
+  bottom: -2px;
 }
 
 /* Header links and navigation */
@@ -169,20 +220,24 @@ header a {
 
 .view {
   display: inline-block !important;
-  margin: 0.8em 0 !important;
-  padding: 0.6em 1em !important;
-  background-color: white !important;
-  border: 1px solid var(--border-color) !important;
-  border-radius: 4px !important;
-  transition: var(--transition) !important;
+  margin: 0.6em 0 !important;
+  padding: 0.8em 1em !important;
+  background: white !important;
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
   width: 100% !important;
   text-align: center !important;
   box-sizing: border-box !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 8px rgba(3, 102, 214, 0.08) !important;
 }
 
 .view:hover {
-  background-color: var(--primary-light) !important;
-  border-color: var(--primary-color) !important;
+  background: var(--primary-light) !important;
+  border-color: var(--primary-dark) !important;
+  box-shadow: 0 6px 16px rgba(3, 102, 214, 0.15) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* Improve code blocks */
@@ -261,6 +316,13 @@ hr {
   opacity: 0.4;
 }
 
+section > hr {
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+  border: none;
+  height: 1px;
+  margin: 2.5em 0;
+}
+
 /* Strong emphasis styling */
 strong, b {
   color: var(--primary-dark);
@@ -290,17 +352,22 @@ body ul ul, body ol ol {
 
 /* Improve styling of inline navigation links */
 section > p a {
-  padding: 0.5em 1em !important;
-  margin: 0.3em 0.2em !important;
+  padding: 0.7em 1.2em !important;
+  margin: 0.5em 0.4em !important;
   display: inline-block !important;
-  border: 1px solid var(--border-color) !important;
+  border: 2px solid var(--primary-color) !important;
   background-color: white !important;
-  border-radius: 4px !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 8px rgba(3, 102, 214, 0.08) !important;
+  transition: all 0.3s ease !important;
 }
 
 section > p a:hover {
   background-color: var(--primary-light) !important;
-  border-color: var(--primary-color) !important;
+  border-color: var(--primary-dark) !important;
+  box-shadow: 0 6px 16px rgba(3, 102, 214, 0.15) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* Link styling for different states */
@@ -319,43 +386,55 @@ h1 a:hover, h2 a:hover, h3 a:hover {
 
 /* Responsive design for smaller screens */
 @media (max-width: 1024px) {
-  .wrapper {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 1rem;
+  body .wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 2rem !important;
   }
 
-  header {
-    grid-column: 1;
-    position: static;
-    margin-bottom: 2rem;
+  body header {
+    position: static !important;
+    left: auto !important;
+    width: 100% !important;
+    max-height: none !important;
+    margin-bottom: 2rem !important;
   }
 
-  section {
-    grid-column: 1;
+  body section {
+    grid-column: 1 !important;
   }
 
-  footer {
-    grid-column: 1;
+  body footer {
+    grid-column: 1 !important;
+    margin-left: 0 !important;
   }
 }
 
 /* Responsive for mobile */
 @media (max-width: 768px) {
-  .wrapper {
+  body .wrapper {
     gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  body header {
+    width: 100%;
   }
 
   h1 {
-    font-size: 1.6em;
+    font-size: 1.8em !important;
   }
 
   h2 {
-    font-size: 1.3em;
+    font-size: 1.3em !important;
+  }
+
+  h3 {
+    font-size: 1.1em !important;
   }
 
   section {
-    font-size: 1em;
+    font-size: 1em !important;
   }
 
   header p {
@@ -363,13 +442,13 @@ h1 a:hover, h2 a:hover, h3 a:hover {
   }
 
   .view {
-    margin: 0.5em 0;
+    margin: 0.5em 0 !important;
   }
 
   section > p a {
-    display: block;
-    margin: 0.4em 0;
-    padding: 0.6em 0.8em;
+    display: block !important;
+    margin: 0.5em 0 !important;
+    padding: 0.7em 0.8em !important;
   }
 }
 
