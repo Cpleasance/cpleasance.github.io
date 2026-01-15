@@ -1,4 +1,4 @@
-# corypleasance.github.io
+# cpleasance.github.io
 
 Personal portfolio website hosted on GitHub Pages.
 
