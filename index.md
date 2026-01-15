@@ -23,6 +23,14 @@ Whether I'm writing custom bootloaders in x86 Assembly, optimizing S&P 500 forec
 
 ---
 
+## Currently
+
+- Researching LLM vulnerabilities through red teaming at University of Stirling
+- Building a distributed training framework for multi-GPU environments
+- Second year of BSc Data Science & Artificial Intelligence
+
+---
+
 [View Full CV](/cv){: .btn-primary} [View Projects](/projects){: .btn-primary} [Read Blog](/blog){: .btn-primary}
 
 ---
