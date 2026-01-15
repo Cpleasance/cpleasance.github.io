@@ -13,8 +13,8 @@ import markdown
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max upload
 
-# Paths relative to the Jekyll site
-SITE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Paths relative to the Jekyll site (tools/blog_editor -> site root)
+SITE_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 POSTS_DIR = os.path.join(SITE_ROOT, '_posts')
 DRAFTS_DIR = os.path.join(SITE_ROOT, '_drafts')
 IMAGES_DIR = os.path.join(SITE_ROOT, 'assets', 'images', 'blog')

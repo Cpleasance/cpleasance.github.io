@@ -6,25 +6,25 @@ _site/
 vendor/
 
 # Environment variables
+.env
 .env.local
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Editor files
+# Editor/IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Documentation (local reference only)
-SITE_GUIDE.md
-
-# Python (blog_editor)
+# Python virtual environments
 venv/
+**/venv/
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *.pyo
 *.pyd
@@ -33,7 +33,5 @@ __pycache__/
 dist/
 build/
 
-# Blog editor uploaded images (optional - remove if you want to track these)
-# assets/images/blog/
-
-
+# Local documentation
+SITE_GUIDE.md
