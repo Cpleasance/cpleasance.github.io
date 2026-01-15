@@ -1,0 +1,83 @@
+/* Custom styles for better appearance */
+
+/* Improve spacing and readability */
+section {
+  line-height: 1.7;
+}
+
+/* Better link styling */
+a {
+  color: #4183c4;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1e5490;
+  text-decoration: underline;
+}
+
+/* Improve heading hierarchy */
+h1 {
+  border-bottom: 2px solid #eaecef;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Better list styling */
+ul, ol {
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Improve code blocks if any */
+code {
+  background-color: #f6f8fa;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 85%;
+}
+
+/* Better blockquote styling */
+blockquote {
+  border-left: 4px solid #dfe2e5;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #6a737d;
+}
+
+/* Improve table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+table th,
+table td {
+  border: 1px solid #dfe2e5;
+  padding: 0.5em;
+}
+
+table th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+
+/* Better horizontal rule */
+hr {
+  border: none;
+  border-top: 1px solid #eaecef;
+  margin: 2em 0;
+}
+

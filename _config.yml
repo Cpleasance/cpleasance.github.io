@@ -2,8 +2,9 @@ title: Cory Pleasance
 description: Data Science & AI Student | ML | LLM Research | Systems
 theme: jekyll-theme-minimal
 url: https://cpleasance.github.io
+baseurl: ""  # Leave empty if repo is named cpleasance.github.io
 github:
   username: Cpleasance
 
 # Google Analytics 
-google_analytics: G-XXXXXXXXXX
+google_analytics: G-12LPDDPPVG

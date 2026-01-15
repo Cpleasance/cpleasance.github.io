@@ -2,21 +2,27 @@
 title: "CV – Cory Pleasance"
 ---
 
-[← Home](/) | [Blog](/blog)
+**Navigation:** [← Home](/) | [Blog](/blog)
+
+---
 
 # Cory Pleasance
 
 **BSc Data Science & Artificial Intelligence – University of Stirling**  
-Focused on machine learning, LLM research, and high-performance systems.
+*Focused on machine learning, LLM research, and high-performance systems.*
 
-- Nationality: UK / Malta (EU)
-- Phone: +44 7846898677  
-- GitHub: [github.com/Cpleasance](https://github.com/Cpleasance)  
-- LinkedIn: [linkedin.com/in/cory-pleasance-b99b80205](https://www.linkedin.com/in/cory-pleasance-b99b80205/)  
-- Kaggle: [kaggle.com/cpleasance](https://www.kaggle.com/cpleasance)  
-- Email: [corypleasance05@gmail.com](mailto:corypleasance05@gmail.com)
+---
 
-[Download PDF](Cory_Pleasance_CV_December_2025.pdf)
+## Contact Information
+
+- **Nationality:** UK / Malta (EU)
+- **Phone:** +44 7846898677  
+- **GitHub:** [github.com/Cpleasance](https://github.com/Cpleasance)  
+- **LinkedIn:** [linkedin.com/in/cory-pleasance-b99b80205](https://www.linkedin.com/in/cory-pleasance-b99b80205/)  
+- **Kaggle:** [kaggle.com/cpleasance](https://www.kaggle.com/cpleasance)  
+- **Email:** [corypleasance05@gmail.com](mailto:corypleasance05@gmail.com)
+
+[Download PDF Version](Cory_Pleasance_CV_December_2025.pdf)
 
 ---
 
