@@ -19,4 +19,7 @@ Thumbs.db
 *.swo
 *~
 
+# Documentation (local reference only)
+SITE_GUIDE.md
+
 
