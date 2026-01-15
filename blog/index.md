@@ -2,7 +2,7 @@
 title: "Blog"
 ---
 
-**Navigation:** [← Home](/) | [CV](/cv)
+[← Home](/) · [CV](/cv)
 
 ---
 
@@ -14,11 +14,11 @@ Welcome to my blog, where I share insights on machine learning, LLM research, hi
 
 ## Topics I Write About
 
-- **Large Language Models**: Prompt engineering, adversarial testing, alignment research, and robustness evaluation
-- **High-Performance Computing**: Distributed training, multi-GPU/CPU/TPU setups, and performance optimization
-- **Machine Learning Projects**: Kaggle competitions, production pipelines, and practical applications
-- **Systems Programming**: Low-level development, operating systems, and embedded systems
-- **Research Updates**: Progress on university-led research and academic work
+- **Large Language Models** - Prompt engineering, adversarial testing, alignment research, and robustness evaluation
+- **High-Performance Computing** - Distributed training, multi-GPU/CPU/TPU setups, and performance optimization
+- **Machine Learning Projects** - Kaggle competitions, production pipelines, and practical applications
+- **Systems Programming** - Low-level development, operating systems, and embedded systems
+- **Research Updates** - Progress on university-led research and academic work
 
 ---
 
@@ -28,5 +28,5 @@ Welcome to my blog, where I share insights on machine learning, LLM research, hi
 
 ---
 
-**Subscribe:** [RSS Feed](/feed.xml)
+[Subscribe via RSS](/feed.xml)
 

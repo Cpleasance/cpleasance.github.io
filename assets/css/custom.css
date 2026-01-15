@@ -28,11 +28,12 @@ body {
 .wrapper {
   max-width: 1400px !important;
   margin: 0 auto !important;
-  padding: 2rem !important;
+  padding: 2rem 2rem 4rem 2rem !important;
   display: grid !important;
   grid-template-columns: 280px 1fr !important;
   gap: 3rem !important;
   align-items: start !important;
+  min-height: 100vh !important;
 }
 
 /* -------------------- HEADER (SIDEBAR) -------------------- */
@@ -103,7 +104,7 @@ header .view:last-child {
 /* -------------------- MAIN CONTENT SECTION -------------------- */
 section {
   max-width: 800px !important;
-  padding: 0 !important;
+  padding: 0 0 2rem 0 !important;
   margin: 0 !important;
   width: 100% !important;
   float: none !important;
@@ -115,6 +116,17 @@ section > * {
 
 section > *:last-child {
   margin-bottom: 0;
+}
+
+/* Back to home link at bottom of pages */
+section > hr:last-of-type {
+  margin-top: 3rem !important;
+}
+
+section > p:last-child {
+  text-align: center !important;
+  margin-top: 1rem !important;
+  font-size: 0.95rem !important;
 }
 
 /* -------------------- TYPOGRAPHY -------------------- */
@@ -172,22 +184,44 @@ a:hover {
   text-decoration: underline !important;
 }
 
-/* Navigation links in content */
+/* Inline navigation links (using · separator) */
+section > p:first-child {
+  font-size: 0.95rem !important;
+  color: var(--text-secondary) !important;
+  margin-bottom: 1.5rem !important;
+}
+
 section > p:first-child a {
-  display: inline-block !important;
-  padding: 0.6rem 1rem !important;
-  margin: 0 0.5rem 0.5rem 0 !important;
-  border: 2px solid var(--primary-color) !important;
-  border-radius: 6px !important;
-  background: white !important;
+  color: var(--primary-color) !important;
+  padding: 0.2rem 0.4rem !important;
+  margin: 0 !important;
   font-weight: 500 !important;
-  transition: var(--transition) !important;
 }
 
 section > p:first-child a:hover {
   background: var(--primary-light) !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+}
+
+/* Prominent action links (like "View Full CV") */
+section strong a {
+  display: inline-block !important;
+  padding: 0.7rem 1.2rem !important;
+  margin: 0 0.5rem 0.5rem 0 !important;
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 6px !important;
+  background: white !important;
+  font-weight: 600 !important;
+  transition: var(--transition) !important;
+  box-shadow: 0 2px 6px rgba(3, 102, 214, 0.08) !important;
+}
+
+section strong a:hover {
+  background: var(--primary-light) !important;
   text-decoration: none !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(3, 102, 214, 0.15) !important;
 }
 
 /* -------------------- LISTS -------------------- */
@@ -277,22 +311,6 @@ hr {
   background: linear-gradient(to right, transparent, var(--primary-color), transparent) !important;
   margin: 2rem 0 !important;
   opacity: 0.5 !important;
-}
-
-/* -------------------- FOOTER -------------------- */
-footer {
-  grid-column: 1 / -1 !important;
-  margin-top: 4rem !important;
-  padding: 2rem !important;
-  text-align: center !important;
-  border-top: 2px solid var(--border-color) !important;
-  background-color: var(--bg-light) !important;
-  border-radius: var(--border-radius) !important;
-}
-
-footer p {
-  margin: 0.5rem 0 !important;
-  font-size: 0.9rem !important;
 }
 
 /* -------------------- RESPONSIVE DESIGN -------------------- */
@@ -387,5 +405,64 @@ footer p {
 
   h3 {
     font-size: 1.1rem !important;
+  }
+}
+
+
+/* -------------------- PRINT STYLES -------------------- */
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  .wrapper {
+    display: block !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  header {
+    display: none !important;
+  }
+
+  section {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  a[href^="mailto:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  footer {
+    display: none !important;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+    color: #000 !important;
+  }
+
+  p, li {
+    page-break-inside: avoid;
+  }
+
+  hr {
+    border-top: 1px solid #000 !important;
+    opacity: 1 !important;
   }
 }

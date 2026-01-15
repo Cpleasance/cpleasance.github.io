@@ -4,7 +4,7 @@ title: "Home"
 
 # Cory Pleasance
 
-**BSc Data Science & Artificial Intelligence** | LLM Research & Systems  
+**BSc Data Science & Artificial Intelligence**  
 *University of Stirling*
 
 ---
@@ -19,13 +19,8 @@ Whether I'm writing custom bootloaders in x86 Assembly, optimizing S&P 500 forec
 
 ---
 
-## Navigation
+## Quick Links
 
-- [Curriculum Vitae](/cv)
-- [Blog](/blog)
+**[View Full CV](/cv)** | **[Read Blog](/blog)**
 
----
-
-## Connect
-
-[GitHub](https://github.com/Cpleasance) | [LinkedIn](https://www.linkedin.com/in/cory-pleasance-b99b80205/) | [Kaggle](https://www.kaggle.com/cpleasance) | [Email](mailto:corypleasance05@gmail.com)
+[GitHub](https://github.com/Cpleasance) · [LinkedIn](https://www.linkedin.com/in/cory-pleasance-b99b80205/) · [Kaggle](https://www.kaggle.com/cpleasance) · [Email](mailto:corypleasance05@gmail.com)

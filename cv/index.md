@@ -2,7 +2,7 @@
 title: "CV – Cory Pleasance"
 ---
 
-**Navigation:** [← Home](/) | [Blog](/blog)
+[← Home](/) · [Blog](/blog) · [Download PDF](Cory_Pleasance_CV_December_2025.pdf)
 
 ---
 
@@ -17,12 +17,10 @@ title: "CV – Cory Pleasance"
 
 - **Nationality:** UK / Malta (EU)
 - **Phone:** +44 7846898677  
+- **Email:** [corypleasance05@gmail.com](mailto:corypleasance05@gmail.com)
 - **GitHub:** [github.com/Cpleasance](https://github.com/Cpleasance)  
 - **LinkedIn:** [linkedin.com/in/cory-pleasance-b99b80205](https://www.linkedin.com/in/cory-pleasance-b99b80205/)  
-- **Kaggle:** [kaggle.com/cpleasance](https://www.kaggle.com/cpleasance)  
-- **Email:** [corypleasance05@gmail.com](mailto:corypleasance05@gmail.com)
-
-[Download PDF Version](Cory_Pleasance_CV_December_2025.pdf)
+- **Kaggle:** [kaggle.com/cpleasance](https://www.kaggle.com/cpleasance)
 
 ---
 
@@ -110,16 +108,6 @@ London UK - *(Oct 2022 – Jun 2024)*
 *(July 2018-Jan 2020)*
 
 **IB:** Middle Years Program (MYP)
-
----
-
-## References
-
-- **Dr Paulius Stankaitis** – Lecturer & Research Supervisor, University of Stirling  
-  paulius.stankaitis@stir.ac.uk
-
-- **Professor Mario Kolberg** – Associate Dean (Internationalisation), University of Stirling  
-  mario.kolberg@stir.ac.uk
 
 ---
 
