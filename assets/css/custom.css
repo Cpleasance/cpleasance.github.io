@@ -107,54 +107,15 @@ header .view:last-child {
 
 /* Status badge in sidebar */
 .status-badge {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
-  color: white !important;
+  background: var(--primary-light) !important;
+  color: var(--primary-dark) !important;
   padding: 0.6rem 1rem !important;
   margin: 1rem 1.5rem !important;
   border-radius: 6px !important;
   font-size: 0.85rem !important;
   font-weight: 600 !important;
   text-align: center !important;
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3) !important;
-}
-
-/* Sidebar section */
-.sidebar-section {
-  margin: 1.5rem 1.5rem 1.5rem 1.5rem !important;
-  padding-top: 1rem !important;
-  border-top: 2px solid var(--border-color) !important;
-}
-
-.sidebar-section h3 {
-  font-size: 1rem !important;
-  margin: 0 0 0.8rem 0 !important;
-  color: var(--primary-dark) !important;
-  font-weight: 600 !important;
-}
-
-.activity-list {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.activity-list li {
-  padding: 0.5rem 0 !important;
-  margin: 0 !important;
-  font-size: 0.85rem !important;
-  line-height: 1.4 !important;
-  color: var(--text-secondary) !important;
-  border-bottom: 1px solid rgba(3, 102, 214, 0.1) !important;
-}
-
-.activity-list li:last-child {
-  border-bottom: none !important;
-}
-
-.activity-list li:before {
-  content: "▸ " !important;
-  color: var(--primary-color) !important;
-  font-weight: bold !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 /* -------------------- MAIN CONTENT SECTION -------------------- */

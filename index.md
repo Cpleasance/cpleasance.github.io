@@ -2,10 +2,6 @@
 title: "Home"
 ---
 
-<nav class="page-nav">
-[CV](/cv) · [Blog](/blog)
-</nav>
-
 # Cory Pleasance
 
 **BSc Data Science & Artificial Intelligence**  
