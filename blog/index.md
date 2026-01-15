@@ -2,7 +2,9 @@
 title: "Blog"
 ---
 
-**Navigation:** [Home](/) · [CV](/cv) · [Projects](/projects) · [RSS Feed](/feed.xml)
+{% include navigation.html %}
+
+<p class="rss-link"><a href="/feed.xml">RSS Feed</a></p>
 
 ---
 
@@ -39,5 +41,5 @@ Welcome to my blog, where I share insights on machine learning, LLM research, hi
 
 ---
 
-**Navigation:** [Back to Home](/) · [Back to Top](#)
+<p class="nav-footer"><a href="#top">Back to Top</a></p>
 

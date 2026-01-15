@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Test Blog Post: Testing the Editor"
 date: 2026-01-15 13:46:39
 tags: [testing, demo]

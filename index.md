@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-**Navigation:** [CV](/cv) · [Projects](/projects) · [Blog](/blog)
+{% include navigation.html %}
 
 ---
 

@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{% include navigation.html %}
+
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+  <span class="breadcrumb-separator">&rsaquo;</span>
+  <a href="/blog/">Blog</a>
+  <span class="breadcrumb-separator">&rsaquo;</span>
+  <span class="breadcrumb-current">{{ page.title }}</span>
+</nav>
+
+---
+
+<article class="blog-post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% if page.tags.size > 0 %}
+        <span class="post-tags">
+          {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
+---
+
+<nav class="post-navigation">
+  <a href="/blog/" class="back-to-blog">&larr; Back to Blog</a>
+
+  <div class="prev-next-posts">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url }}" class="prev-post">&larr; {{ page.previous.title }}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a href="{{ page.next.url }}" class="next-post">{{ page.next.title }} &rarr;</a>
+    {% endif %}
+  </div>
+</nav>
+
+<p class="nav-footer"><a href="#top">Back to Top</a></p>

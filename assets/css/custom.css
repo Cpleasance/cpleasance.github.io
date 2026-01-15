@@ -649,6 +649,244 @@ hr {
 }
 
 
+/* -------------------- SITE NAVIGATION -------------------- */
+.site-nav {
+  text-align: center !important;
+  padding: 0.8rem 1rem !important;
+  margin: 0 0 2rem 0 !important;
+  background: var(--primary-light) !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--border-color) !important;
+  font-size: 0.95rem !important;
+}
+
+.site-nav .nav-label {
+  font-weight: 600 !important;
+  color: var(--text-secondary) !important;
+  margin-right: 0.5rem !important;
+}
+
+.site-nav .nav-separator {
+  color: var(--text-secondary) !important;
+  margin: 0 0.3rem !important;
+}
+
+.site-nav a {
+  color: var(--primary-color) !important;
+  padding: 0.3rem 0.6rem !important;
+  font-weight: 500 !important;
+  display: inline-block !important;
+}
+
+.site-nav a:hover {
+  background: white !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+}
+
+.site-nav .nav-current {
+  color: var(--primary-dark) !important;
+  font-weight: 700 !important;
+  padding: 0.3rem 0.6rem !important;
+  background: white !important;
+  border-radius: 4px !important;
+  border: 2px solid var(--primary-color) !important;
+  display: inline-block !important;
+}
+
+/* -------------------- BREADCRUMBS -------------------- */
+.breadcrumbs {
+  font-size: 0.9rem !important;
+  color: var(--text-secondary) !important;
+  margin: 0 0 1rem 0 !important;
+  padding: 0.5rem 0 !important;
+}
+
+.breadcrumbs a {
+  color: var(--primary-color) !important;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline !important;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem !important;
+  color: var(--text-secondary) !important;
+}
+
+.breadcrumb-current {
+  color: var(--primary-dark) !important;
+  font-weight: 500 !important;
+}
+
+/* -------------------- BLOG POST STYLES -------------------- */
+.blog-post {
+  margin: 1rem 0 !important;
+}
+
+.post-header {
+  margin-bottom: 2rem !important;
+}
+
+.post-title {
+  margin-bottom: 0.5rem !important;
+}
+
+.post-meta {
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+.post-tags {
+  display: inline-flex !important;
+  gap: 0.5rem !important;
+  flex-wrap: wrap !important;
+}
+
+.tag {
+  background: var(--primary-light) !important;
+  color: var(--primary-dark) !important;
+  padding: 0.2rem 0.6rem !important;
+  border-radius: 4px !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.post-content {
+  line-height: 1.8 !important;
+}
+
+/* -------------------- POST NAVIGATION -------------------- */
+.post-navigation {
+  margin: 2rem 0 1rem 0 !important;
+}
+
+.back-to-blog {
+  display: inline-block !important;
+  padding: 0.6rem 1rem !important;
+  background: var(--primary-light) !important;
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 6px !important;
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
+  transition: var(--transition) !important;
+}
+
+.back-to-blog:hover {
+  background: white !important;
+  text-decoration: none !important;
+  transform: translateY(-2px) !important;
+}
+
+.prev-next-posts {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-top: 1.5rem !important;
+  gap: 1rem !important;
+}
+
+.prev-post,
+.next-post {
+  padding: 0.5rem 1rem !important;
+  background: white !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px !important;
+  color: var(--primary-color) !important;
+  font-size: 0.9rem !important;
+  transition: var(--transition) !important;
+  max-width: 45% !important;
+}
+
+.prev-post:hover,
+.next-post:hover {
+  border-color: var(--primary-color) !important;
+  text-decoration: none !important;
+}
+
+.next-post {
+  text-align: right !important;
+  margin-left: auto !important;
+}
+
+/* -------------------- FOOTER NAVIGATION -------------------- */
+.nav-footer {
+  text-align: center !important;
+  margin-top: 1rem !important;
+  font-size: 0.9rem !important;
+}
+
+/* -------------------- PAGE-SPECIFIC ELEMENTS -------------------- */
+.download-link {
+  text-align: center !important;
+  margin: 1rem 0 !important;
+}
+
+.rss-link {
+  text-align: center !important;
+  margin: 0 0 1rem 0 !important;
+  font-size: 0.9rem !important;
+}
+
+.rss-link a {
+  color: var(--primary-color) !important;
+  font-weight: 500 !important;
+}
+
+/* -------------------- RESPONSIVE NAVIGATION -------------------- */
+@media (max-width: 768px) {
+  .site-nav {
+    padding: 0.6rem 0.8rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .site-nav .nav-label {
+    display: block !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .site-nav a,
+  .site-nav .nav-current {
+    padding: 0.25rem 0.4rem !important;
+  }
+
+  .breadcrumbs {
+    font-size: 0.85rem !important;
+  }
+
+  .prev-next-posts {
+    flex-direction: column !important;
+  }
+
+  .prev-post,
+  .next-post {
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-nav {
+    font-size: 0.8rem !important;
+  }
+
+  .site-nav .nav-separator {
+    display: none !important;
+  }
+
+  .site-nav a,
+  .site-nav .nav-current {
+    display: block !important;
+    margin: 0.2rem 0 !important;
+    text-align: center !important;
+  }
+}
+
 /* -------------------- PRINT STYLES -------------------- */
 @media print {
   body {

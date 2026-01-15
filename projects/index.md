@@ -2,7 +2,7 @@
 title: "Projects – Cory Pleasance"
 ---
 
-**Navigation:** [Home](/) · [CV](/cv) · [Blog](/blog)
+{% include navigation.html %}
 
 ---
 
@@ -86,4 +86,4 @@ Developed a bootloader and operating system from scratch in x86 Assembly and C, 
 
 ---
 
-**Navigation:** [Back to Home](/) · [Back to Top](#)
+<p class="nav-footer"><a href="#top">Back to Top</a></p>
