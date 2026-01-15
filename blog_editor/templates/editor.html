@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Editor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/editor.css') }}">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-title">
+                <h1>Blog Editor</h1>
+                <span class="unsaved-indicator" id="unsavedIndicator" title="Unsaved changes"></span>
+            </div>
+            <div class="header-actions">
+                <span class="autosave-indicator" id="autosaveIndicator">
+                    <span class="autosave-text">Saved</span>
+                </span>
+                <button id="loadPostsBtn" class="btn btn-secondary">Load Post</button>
+                <button id="newPostBtn" class="btn btn-secondary">New Post</button>
+            </div>
+        </header>
+
+        <!-- Main Editor Area -->
+        <main class="main">
+            <!-- Metadata Panel -->
+            <div class="metadata-panel">
+                <div class="form-group" id="titleGroup">
+                    <label for="title">Title <span class="required">*</span></label>
+                    <input type="text" id="title" placeholder="Enter post title..." />
+                    <span class="error-message">Title is required</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tagInput">Tags</label>
+                    <div class="tags-container">
+                        <div id="tagsList" class="tags-list"></div>
+                        <input type="text" id="tagInput" placeholder="Add tag + Enter" />
+                    </div>
+                </div>
+
+                <div class="form-group status-group">
+                    <label>Status</label>
+                    <div class="toggle-container">
+                        <button id="draftBtn" class="status-btn draft active">
+                            <span class="status-indicator"></span>Draft
+                        </button>
+                        <button id="publishBtn" class="status-btn publish">
+                            <span class="status-indicator"></span>Publish
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toolbar -->
+            <div class="toolbar" id="toolbar">
+                <button class="toolbar-expand-btn" id="toolbarExpand">More</button>
+                <div class="toolbar-group">
+                    <button class="tool-btn" data-action="h1" title="Heading 1">H1</button>
+                    <button class="tool-btn" data-action="h2" title="Heading 2">H2</button>
+                    <button class="tool-btn" data-action="h3" title="Heading 3">H3</button>
+                </div>
+                <div class="toolbar-divider"></div>
+                <div class="toolbar-group">
+                    <button class="tool-btn" data-action="bold" title="Bold (Ctrl+B)"><strong>B</strong></button>
+                    <button class="tool-btn" data-action="italic" title="Italic (Ctrl+I)"><em>I</em></button>
+                    <button class="tool-btn" data-action="strikethrough" title="Strikethrough (Ctrl+Shift+S)"><s>S</s></button>
+                </div>
+                <div class="toolbar-divider"></div>
+                <div class="toolbar-group">
+                    <button class="tool-btn" data-action="link" title="Insert Link (Ctrl+K)">Link</button>
+                    <button class="tool-btn" data-action="image" title="Insert Image (Ctrl+Shift+I)">Img</button>
+                    <button class="tool-btn" data-action="upload" title="Upload Image">Upload</button>
+                </div>
+                <div class="toolbar-divider"></div>
+                <div class="toolbar-group">
+                    <button class="tool-btn" data-action="code" title="Inline Code (Ctrl+`)">Code</button>
+                    <button class="tool-btn" data-action="codeblock" title="Code Block (Ctrl+Shift+`)">Block</button>
+                    <button class="tool-btn" data-action="quote" title="Blockquote (Ctrl+Shift+Q)">Quote</button>
+                </div>
+                <div class="toolbar-divider"></div>
+                <div class="toolbar-group">
+                    <button class="tool-btn" data-action="ul" title="Bullet List (Ctrl+Shift+U)">List</button>
+                    <button class="tool-btn" data-action="ol" title="Numbered List (Ctrl+Shift+O)">1. List</button>
+                    <button class="tool-btn" data-action="hr" title="Horizontal Rule">HR</button>
+                </div>
+                <div class="toolbar-spacer"></div>
+                <div class="toolbar-group">
+                    <button id="togglePreview" class="tool-btn preview-toggle" title="Toggle Preview (Ctrl+P)">Preview</button>
+                </div>
+            </div>
+
+            <!-- Editor Container -->
+            <div class="editor-container">
+                <div class="editor-pane">
+                    <textarea id="editor" placeholder="Write your blog post in Markdown..."></textarea>
+                </div>
+                <div class="preview-pane" id="previewPane">
+                    <div class="preview-content" id="preview"></div>
+                </div>
+            </div>
+
+            <!-- Footer Actions -->
+            <div class="footer-actions">
+                <div class="word-count">
+                    <span id="wordCount">0 words</span>
+                    <span id="charCount">0 characters</span>
+                </div>
+                <button id="saveBtn" class="btn btn-primary btn-save" title="Save (Ctrl+S)">
+                    <span class="btn-text">Save Post</span>
+                    <span class="btn-spinner"></span>
+                </button>
+            </div>
+        </main>
+
+        <!-- Posts Modal -->
+        <div id="postsModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Load Post</h2>
+                    <button class="modal-close" id="closeModal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="posts-section">
+                        <h3>Drafts</h3>
+                        <ul id="draftsList" class="posts-list"></ul>
+                    </div>
+                    <div class="posts-section">
+                        <h3>Published</h3>
+                        <ul id="publishedList" class="posts-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Upload Modal -->
+        <div id="uploadModal" class="modal">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <h2>Upload Image</h2>
+                    <button class="modal-close" id="closeUploadModal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="upload-zone" id="uploadZone">
+                        <div class="upload-spinner"></div>
+                        <p>Drag & drop an image here or</p>
+                        <input type="file" id="imageInput" accept="image/*" />
+                        <label for="imageInput" class="btn btn-secondary">Choose File</label>
+                    </div>
+                    <div id="uploadStatus" class="upload-status"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Confirmation Modal -->
+        <div id="confirmModal" class="modal confirm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="confirmTitle">Confirm</h2>
+                    <button class="modal-close" id="closeConfirmModal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="confirm-icon" id="confirmIcon"></div>
+                    <p class="confirm-message" id="confirmMessage"></p>
+                    <div class="confirm-actions">
+                        <button id="confirmCancel" class="btn btn-secondary">Cancel</button>
+                        <button id="confirmOk" class="btn btn-primary">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div id="notification" class="notification">
+            <span class="notification-icon"></span>
+            <div class="notification-content">
+                <div class="notification-title"></div>
+                <div class="notification-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/editor.js') }}"></script>
+</body>
+</html>
