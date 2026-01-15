@@ -2,7 +2,7 @@
 title: "Blog"
 ---
 
-**Navigation:** [Home](/) · [CV](/cv) · [RSS Feed](/feed.xml)
+**Navigation:** [Home](/) · [CV](/cv) · [Projects](/projects) · [RSS Feed](/feed.xml)
 
 ---
 

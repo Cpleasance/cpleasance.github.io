@@ -369,10 +369,18 @@ hr {
   section {
     max-width: 100% !important;
   }
+
+  .status-badge {
+    margin: 1rem 1.5rem !important;
+  }
 }
 
 /* Mobile devices */
 @media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
   .wrapper {
     padding: 1rem !important;
     gap: 1.5rem !important;
@@ -380,10 +388,32 @@ hr {
 
   header {
     max-width: 100% !important;
+    border-radius: 8px !important;
   }
 
   header img {
     max-height: 300px !important;
+  }
+
+  header h1 {
+    font-size: 1.3rem !important;
+    margin: 1rem 1rem 0.5rem 1rem !important;
+  }
+
+  header p {
+    font-size: 0.85rem !important;
+  }
+
+  header .view {
+    margin: 0.5rem 1rem !important;
+    padding: 0.6rem 0.8rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  .status-badge {
+    font-size: 0.8rem !important;
+    padding: 0.5rem 0.8rem !important;
+    margin: 0.8rem 1rem !important;
   }
 
   h1 {
@@ -392,47 +422,77 @@ hr {
 
   h2 {
     font-size: 1.35rem !important;
+    margin-top: 2rem !important;
   }
 
   h3 {
     font-size: 1.15rem !important;
+    margin-top: 1.5rem !important;
   }
 
-  .button-group {
-    flex-direction: column !important;
+  section > p:first-of-type {
+    padding: 0.6rem 0.8rem !important;
+    font-size: 0.85rem !important;
   }
 
-  .btn-primary {
-    width: 100% !important;
+  section > p:first-of-type a {
+    display: inline-block !important;
+    padding: 0.25rem 0.4rem !important;
+    margin: 0.1rem !important;
+    font-size: 0.85rem !important;
   }
 
-  section > p:first-child a {
+  .btn-primary,
+  a.btn-primary {
     display: block !important;
-    margin: 0 0 0.5rem 0 !important;
-    text-align: center !important;
+    width: 100% !important;
+    margin: 0 0 0.8rem 0 !important;
+    padding: 0.7rem 1rem !important;
+    font-size: 0.95rem !important;
   }
 
   ul, ol {
     padding-left: 1.5rem !important;
+  }
+
+  table {
+    font-size: 0.9rem !important;
+  }
+
+  th, td {
+    padding: 0.5rem 0.7rem !important;
   }
 }
 
 /* Very small mobile devices */
 @media (max-width: 480px) {
   body {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .wrapper {
     padding: 0.75rem !important;
   }
 
+  header {
+    border-radius: 6px !important;
+  }
+
   header h1 {
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
   }
 
   header p {
+    font-size: 0.8rem !important;
+    margin: 0.6rem 1rem !important;
+  }
+
+  header .view {
     font-size: 0.85rem !important;
+  }
+
+  .status-badge {
+    font-size: 0.75rem !important;
   }
 
   h1 {
@@ -445,6 +505,16 @@ hr {
 
   h3 {
     font-size: 1.1rem !important;
+  }
+
+  section > p:first-of-type {
+    font-size: 0.8rem !important;
+  }
+
+  .btn-primary,
+  a.btn-primary {
+    font-size: 0.9rem !important;
+    padding: 0.6rem 0.8rem !important;
   }
 }
 

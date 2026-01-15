@@ -2,7 +2,7 @@
 title: "CV – Cory Pleasance"
 ---
 
-**Navigation:** [Home](/) · [Blog](/blog) · [Download PDF](Cory_Pleasance_CV_December_2025.pdf)
+**Navigation:** [Home](/) · [Projects](/projects) · [Blog](/blog) · [Download PDF](Cory_Pleasance_CV_December_2025.pdf)
 
 ---
 
@@ -16,7 +16,6 @@ title: "CV – Cory Pleasance"
 ## Contact Information
 
 - **Nationality:** UK / Malta (EU)
-- **Phone:** +44 7846898677  
 - **Email:** [corypleasance05@gmail.com](mailto:corypleasance05@gmail.com)
 - **GitHub:** [github.com/Cpleasance](https://github.com/Cpleasance)  
 - **LinkedIn:** [linkedin.com/in/cory-pleasance-b99b80205](https://www.linkedin.com/in/cory-pleasance-b99b80205/)  
@@ -50,17 +49,7 @@ A BSc Data Science and Artificial Intelligence student who is passionate about m
 
 ## Projects
 
-- **Hull Tactical Market Prediction (Kaggle)**  
-  Developed ensemble models for S&P 500 forecasting using LightGBM and CatBoost with advanced feature engineering, time-series validation, and hyperparameter optimisation. Achieved competitive performance against global participants.
-
-- **Production-Grade Sentiment Analysis Pipeline**  
-  Built a modular Python pipeline using VADER, featuring clean architecture and CLI tooling for reproducible analysis.
-
-- **University Management System**  
-  Implemented a system using binary search trees, quicksort algorithms, and graph cycle detection.
-
-- **Custom Operating System**  
-  Developed a bootloader and operating system in x86 Assembly and C, implementing FAT12 filesystem support, disk I/O routines, and BIOS interrupt handling.
+View my detailed [Projects page](/projects) for in-depth descriptions and links.
 
 ---
 
