@@ -12,10 +12,38 @@
   --transition: all 0.2s ease;
 }
 
-/* Improve spacing and readability */
+/* Improved wrapper layout - better space utilization */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+header {
+  grid-column: 1;
+  position: sticky;
+  top: 2rem;
+  padding: 2rem;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
 section {
+  grid-column: 2;
   line-height: 1.8;
   font-size: 1.05em;
+}
+
+footer {
+  grid-column: 1 / -1;
+  border-top: 2px solid var(--border-color);
+  padding-top: 2rem;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 /* Better link styling */
@@ -33,21 +61,48 @@ a:hover {
   background-color: var(--primary-light);
 }
 
+/* Header links and navigation */
+header a {
+  padding: 0.25em 0;
+}
+
+.view {
+  display: inline-block;
+  margin: 0.8em 0;
+  padding: 0.6em 1em;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: var(--transition);
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.view:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-color);
+}
+
 /* Improve heading hierarchy */
 h1 {
   border-bottom: 3px solid var(--primary-color);
   padding-bottom: 0.5em;
   margin-bottom: 1em;
-  margin-top: 0.5em;
+  margin-top: 0;
   font-size: 2em;
   color: var(--primary-dark);
+}
+
+header h1 {
+  margin-top: 0;
 }
 
 h2 {
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 0.4em;
-  margin-top: 1.8em;
-  margin-bottom: 0.8em;
+  margin-top: 2em;
+  margin-bottom: 1em;
   font-size: 1.5em;
   color: var(--primary-dark);
 }
@@ -58,10 +113,27 @@ h3 {
   color: var(--primary-dark);
 }
 
-/* Better list styling */
-ul, ol {
-  padding-left: 2.2em;
+header {
+  grid-column: 1;
+  position: sticky;
+  top: 2rem;
+  padding: 2rem;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+header p {
   margin: 0.8em 0;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin: 1em 0;
+  border-radius: 8px;
 }
 
 li {
@@ -72,6 +144,22 @@ li {
 /* Nested lists */
 ul ul, ol ol {
   margin: 0.4em 0;
+}
+
+/* Improve styling of inline navigation links */
+section > p a {
+  padding: 0.5em 1em;
+  margin: 0.3em 0.2em;
+  display: inline-block;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+section > p a:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-color);
 }
 
 /* Improve code blocks */
@@ -173,5 +261,61 @@ h1 a, h2 a, h3 a {
 
 h1 a:hover, h2 a:hover, h3 a:hover {
   color: var(--primary-color);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  header {
+    grid-column: 1;
+    position: static;
+    margin-bottom: 2rem;
+  }
+
+  section {
+    grid-column: 1;
+  }
+
+  footer {
+    grid-column: 1;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .wrapper {
+    gap: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  section {
+    font-size: 1em;
+  }
+
+  header p {
+    font-size: 0.95em;
+  }
+
+  .view {
+    margin: 0.5em 0;
+  }
+
+  section > p a {
+    display: block;
+    margin: 0.4em 0;
+    padding: 0.6em 0.8em;
+  }
 }
 
