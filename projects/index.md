@@ -74,7 +74,7 @@ Developed a bootloader and operating system from scratch in x86 Assembly and C, 
 - Developed disk I/O routines using BIOS interrupts
 - Created memory management and basic kernel functionality
 
-[View on GitHub](https://github.com/Cpleasance){: .btn-github}
+[View on GitHub](https://github.com/Cpleasance/OS-Build){: .btn-github}
 
 ---
 
