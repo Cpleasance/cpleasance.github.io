@@ -1,83 +1,177 @@
-/* Custom styles for better appearance */
+/* Custom styles for better appearance with blue theme */
+
+/* Root variables for consistent theming */
+:root {
+  --primary-color: #0366d6;
+  --primary-hover: #0256c7;
+  --primary-light: #e8f4fd;
+  --primary-dark: #022a6b;
+  --border-color: #d0e8f7;
+  --bg-light: #f0f6fb;
+  --text-secondary: #4a6fa5;
+  --transition: all 0.2s ease;
+}
 
 /* Improve spacing and readability */
 section {
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 1.05em;
 }
 
 /* Better link styling */
 a {
-  color: #4183c4;
+  color: var(--primary-color);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: var(--transition);
+  border-radius: 3px;
+  padding: 0.15em 0.3em;
 }
 
 a:hover {
-  color: #1e5490;
+  color: var(--primary-hover);
   text-decoration: underline;
+  background-color: var(--primary-light);
 }
 
 /* Improve heading hierarchy */
 h1 {
-  border-bottom: 2px solid #eaecef;
-  padding-bottom: 0.3em;
-  margin-bottom: 0.5em;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  font-size: 2em;
+  color: var(--primary-dark);
 }
 
 h2 {
-  border-bottom: 1px solid #eaecef;
-  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.4em;
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+  font-size: 1.5em;
+  color: var(--primary-dark);
+}
+
+h3 {
   margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
+  color: var(--primary-dark);
 }
 
 /* Better list styling */
 ul, ol {
-  padding-left: 2em;
+  padding-left: 2.2em;
+  margin: 0.8em 0;
 }
 
 li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
+  line-height: 1.6;
 }
 
-/* Improve code blocks if any */
+/* Nested lists */
+ul ul, ol ol {
+  margin: 0.4em 0;
+}
+
+/* Improve code blocks */
 code {
-  background-color: #f6f8fa;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-  font-size: 85%;
+  background-color: var(--bg-light);
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-size: 90%;
+  border: 1px solid var(--border-color);
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+pre {
+  background-color: var(--bg-light);
+  padding: 1em;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+pre code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
 /* Better blockquote styling */
 blockquote {
-  border-left: 4px solid #dfe2e5;
-  padding-left: 1em;
+  border-left: 5px solid var(--primary-color);
+  padding: 0.8em 0 0.8em 1.2em;
   margin-left: 0;
-  color: #6a737d;
+  margin-right: 0;
+  color: var(--text-secondary);
+  background-color: var(--primary-light);
+  border-radius: 0 4px 4px 0;
+  font-style: italic;
 }
 
 /* Improve table styling */
 table {
   border-collapse: collapse;
   width: 100%;
-  margin: 1em 0;
+  margin: 1.2em 0;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 table th,
 table td {
-  border: 1px solid #dfe2e5;
-  padding: 0.5em;
+  border: 1px solid var(--border-color);
+  padding: 0.8em 1em;
+  text-align: left;
 }
 
 table th {
-  background-color: #f6f8fa;
+  background-color: var(--bg-light);
+  font-weight: 600;
+  color: var(--primary-dark);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(3, 102, 214, 0.02);
+}
+
+table tr:hover {
+  background-color: var(--primary-light);
+}
+
+/* Better horizontal rule with blue tint */
+hr {
+  border: none;
+  border-top: 2px solid var(--primary-color);
+  margin: 2.5em 0;
+  opacity: 0.4;
+}
+
+/* Strong emphasis styling */
+strong, b {
+  color: var(--primary-dark);
   font-weight: 600;
 }
 
-/* Better horizontal rule */
-hr {
-  border: none;
-  border-top: 1px solid #eaecef;
-  margin: 2em 0;
+/* Additional blue-themed elements */
+em, i {
+  color: var(--text-secondary);
+}
+
+/* Link styling for different states */
+a:visited {
+  color: #6f42c1;
+}
+
+/* Make headers more prominent with blue */
+h1 a, h2 a, h3 a {
+  color: inherit;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+  color: var(--primary-color);
 }
 
