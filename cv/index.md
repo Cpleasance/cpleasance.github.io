@@ -45,6 +45,32 @@ A BSc Data Science and Artificial Intelligence student who is passionate about m
 
 ---
 
+## Certifications
+
+### Deep Learning & Machine Learning
+- **Advanced Deep Learning Specialist** — IBM *(Jul 2025)*
+- **Deep Learning with Keras and TensorFlow** — IBM *(Jul 2025)*
+- **Introduction to Deep Learning & Neural Networks with Keras** — IBM *(Jun 2025)*
+- **Machine Learning with Python** — IBM *(Jun 2025)*
+
+### Python Programming
+- **Programming with Python Professional Certificate** — OpenEDG Python Institute *(Nov 2025)*
+- **Anaconda Python for Data Science Professional Certificate** — Anaconda *(Apr 2025)*
+- **PCEP – Certified Entry-Level Python Programmer** — OpenEDG Python Institute *(Jan 2024)*
+
+### Data Science & Statistics
+- **Foundations of Data Science** — Google *(Jul 2025)*
+- **Statistics Foundations Professional Certificate** — Wolfram *(Jan 2025)*
+
+### DevOps & Tools
+- **Practical GitHub Actions** — LinkedIn *(Dec 2024)*
+- **Learning Docker** — LinkedIn *(Dec 2024)*
+
+### Generative AI
+- **Build Your Generative AI Productivity Skills** — Microsoft *(Dec 2024)*
+
+---
+
 ## Projects
 
 View my detailed [Projects page](/projects) for in-depth descriptions and links.
