@@ -29,4 +29,21 @@ Whether I'm writing custom bootloaders in x86 Assembly, optimizing S&P 500 forec
 
 ## Connect
 
-[GitHub](https://github.com/Cpleasance){: .social-link} · [LinkedIn](https://www.linkedin.com/in/cory-pleasance-b99b80205/){: .social-link} · [Kaggle](https://www.kaggle.com/cpleasance){: .social-link} · [Email](mailto:corypleasance05@gmail.com){: .social-link}
+<div class="social-links">
+  <a href="https://github.com/Cpleasance" class="social-link">
+    <img src="/assets/images/icons/github.svg" alt="GitHub" class="social-icon">
+    GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/cory-pleasance-b99b80205/" class="social-link">
+    <img src="/assets/images/icons/linkedin.png" alt="LinkedIn" class="social-icon">
+    LinkedIn
+  </a>
+  <a href="https://www.kaggle.com/cpleasance" class="social-link">
+    <img src="/assets/images/icons/kaggle.svg" alt="Kaggle" class="social-icon">
+    Kaggle
+  </a>
+  <a href="mailto:corypleasance05@gmail.com" class="social-link">
+    <img src="/assets/images/icons/gmail.svg" alt="Email" class="social-icon">
+    Email
+  </a>
+</div>

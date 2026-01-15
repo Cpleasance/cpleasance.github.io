@@ -309,18 +309,28 @@ a.btn-kaggle:hover {
 }
 
 /* Social links styling */
+.social-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.8rem !important;
+  justify-content: center !important;
+  margin: 1.5rem 0 !important;
+}
+
 .social-link,
 a.social-link {
-  display: inline-block !important;
-  padding: 0.4rem 0.8rem !important;
-  margin: 0.3rem 0.2rem !important;
-  border: 1px solid var(--border-color) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.6rem 1rem !important;
+  margin: 0 !important;
+  border: 2px solid var(--border-color) !important;
   border-radius: 6px !important;
   background: white !important;
   color: var(--primary-color) !important;
   font-weight: 500 !important;
   transition: var(--transition) !important;
-  box-shadow: 0 1px 3px rgba(3, 102, 214, 0.08) !important;
+  box-shadow: 0 2px 6px rgba(3, 102, 214, 0.08) !important;
 }
 
 .social-link:hover,
@@ -328,8 +338,15 @@ a.social-link:hover {
   background: var(--primary-light) !important;
   border-color: var(--primary-color) !important;
   text-decoration: none !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 3px 8px rgba(3, 102, 214, 0.15) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(3, 102, 214, 0.15) !important;
+}
+
+.social-icon {
+  width: 20px !important;
+  height: 20px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
 }
 
 /* -------------------- LISTS -------------------- */
@@ -607,9 +624,15 @@ hr {
 
   .social-link,
   a.social-link {
-    display: block !important;
-    margin: 0.4rem 0 !important;
-    text-align: center !important;
+    display: inline-flex !important;
+    margin: 0 !important;
+    flex: 1 1 calc(50% - 0.4rem) !important;
+    min-width: 120px !important;
+    justify-content: center !important;
+  }
+
+  .social-links {
+    gap: 0.6rem !important;
   }
 }
 
