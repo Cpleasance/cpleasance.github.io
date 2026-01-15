@@ -1,6 +1,9 @@
-/* Custom styles for better appearance with blue theme */
+/* ============================================
+   CUSTOM STYLES FOR GITHUB PAGES SITE
+   Clean, consistent, and responsive design
+   ============================================ */
 
-/* Root variables for consistent theming */
+/* -------------------- THEME VARIABLES -------------------- */
 :root {
   --primary-color: #0366d6;
   --primary-hover: #0256c7;
@@ -8,255 +11,217 @@
   --primary-dark: #022a6b;
   --border-color: #d0e8f7;
   --bg-light: #f0f6fb;
+  --text-primary: #24292e;
   --text-secondary: #4a6fa5;
   --transition: all 0.2s ease;
+  --spacing-unit: 1rem;
+  --border-radius: 8px;
 }
 
-/* Override theme defaults with !important to ensure our styles apply */
-body .wrapper {
-  max-width: 1600px !important;
+/* -------------------- LAYOUT STRUCTURE -------------------- */
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+.wrapper {
+  max-width: 1400px !important;
   margin: 0 auto !important;
-  display: grid !important;
-  grid-template-columns: 320px 1fr !important;
-  gap: 1.5rem !important;
   padding: 2rem !important;
-  background-color: #ffffff !important;
-  min-height: 100vh !important;
-  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 280px 1fr !important;
+  gap: 3rem !important;
+  align-items: start !important;
 }
 
-body header {
-  grid-column: 1 !important;
+/* -------------------- HEADER (SIDEBAR) -------------------- */
+header {
   position: sticky !important;
   top: 2rem !important;
-  height: fit-content !important;
-  padding: 0 1.5rem 2.5rem 1.5rem !important;
+  padding: 0 !important;
   background: linear-gradient(135deg, var(--primary-light) 0%, #f8fbff 100%) !important;
-  border-radius: 14px !important;
+  border-radius: var(--border-radius) !important;
   border: 2px solid var(--primary-color) !important;
-  box-shadow: 0 10px 30px rgba(3, 102, 214, 0.1) !important;
-  width: auto !important;
-  float: none !important;
-  z-index: 100 !important;
-}
-
-body header h1 {
-  margin-top: 0 !important;
-}
-
-body section {
-  grid-column: 2 !important;
-  line-height: 1.8 !important;
-  font-size: 1.05em !important;
-  display: block !important;
-  width: auto !important;
-  padding-right: 2rem !important;
-}
-
-body footer {
-  grid-column: 1 / -1 !important;
-  border-top: 2px solid var(--border-color) !important;
-  padding: 2rem !important;
-  margin-top: auto !important;
-  text-align: center !important;
-  background-color: var(--bg-light) !important;
-  border-radius: 12px !important;
-}
-
-/* Better link styling */
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: var(--transition);
-  border-radius: 3px;
-  padding: 0.15em 0.3em;
-}
-
-a:hover {
-  color: var(--primary-hover);
-  text-decoration: underline;
-  background-color: var(--primary-light);
-}
-
-/* Header links and navigation */
-header a {
-  padding: 0.25em 0;
-}
-
-.view {
-  display: inline-block;
-  margin: 0.8em 0;
-  padding: 0.6em 1em;
-  background-color: white;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  transition: var(--transition);
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.view:hover {
-  background-color: var(--primary-light);
-  border-color: var(--primary-color);
-}
-
-/* Improve heading hierarchy */
-body h1 {
-  border-bottom: 3px solid var(--primary-color) !important;
-  padding-bottom: 0.5em !important;
-  margin-bottom: 1em !important;
-  margin-top: 0 !important;
-  font-size: 2.2em !important;
-  color: var(--primary-dark) !important;
-  font-weight: 700 !important;
-}
-
-body h2 {
-  border-bottom: 2px solid var(--primary-color) !important;
-  padding-bottom: 0.4em !important;
-  margin-top: 2.2em !important;
-  margin-bottom: 1em !important;
-  font-size: 1.6em !important;
-  color: var(--primary-dark) !important;
-  font-weight: 600 !important;
-}
-
-body h3 {
-  margin-top: 1.8em !important;
-  margin-bottom: 0.8em !important;
-  color: var(--primary-dark) !important;
-  font-size: 1.3em !important;
-  font-weight: 600 !important;
-}
-
-header {
-  grid-column: 1;
-  position: sticky;
-  top: 2rem;
-  height: fit-content;
-  padding: 0 1.5rem 2.5rem 1.5rem;
-  background: linear-gradient(135deg, var(--primary-light) 0%, #f8fbff 100%);
-  border-radius: 14px;
-  border: 2px solid var(--primary-color);
-  box-shadow: 0 10px 30px rgba(3, 102, 214, 0.1);
-  width: auto !important;
+  box-shadow: 0 4px 12px rgba(3, 102, 214, 0.1) !important;
+  overflow: hidden !important;
+  width: 280px !important;
   float: none !important;
 }
 
 header img {
-  max-width: calc(100% + 3rem);
-  width: calc(100% + 3rem);
-  height: auto;
-  margin: 0 -1.5rem 1.5em -1.5rem;
-  border-radius: 14px 14px 0 0;
-  display: block;
-  box-shadow: 0 4px 12px rgba(3, 102, 214, 0.15);
-}
-
-header img:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  object-fit: cover !important;
+  max-height: 280px !important;
 }
 
 header h1 {
-  margin-top: 1.5em !important;
-  margin-bottom: 0.5em !important;
-  font-size: 1.5em !important;
-  text-align: center;
-  padding-bottom: 0.5em !important;
+  margin: 1.5rem 1.5rem 0.5rem 1.5rem !important;
+  padding-bottom: 0.5rem !important;
+  font-size: 1.5rem !important;
+  text-align: center !important;
   border-bottom: 2px solid var(--primary-color) !important;
+  line-height: 1.3 !important;
 }
 
 header p {
-  margin: 0.6em 0;
-  line-height: 1.5;
-  color: var(--text-secondary);
-  font-size: 0.92em;
-  text-align: center;
+  margin: 0.8rem 1.5rem !important;
+  padding: 0 !important;
+  line-height: 1.5 !important;
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem !important;
+  text-align: center !important;
 }
 
-/* Better link styling */
-body a {
-  color: var(--primary-color) !important;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  border-radius: 3px;
-  padding: 0.15em 0.3em;
-  position: relative;
-}
-
-body a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--primary-color);
-  transition: width 0.3s ease;
-}
-
-body a:hover::after {
-  width: 100%;
-}
-
-body a:hover {
-  color: var(--primary-hover) !important;
-}
-
-section a {
-  padding: 0.3em 0.5em !important;
-}
-
-section a::after {
-  bottom: -2px;
-}
-
-/* Header links and navigation */
-header a {
-  padding: 0.25em 0;
-}
-
-.view {
-  display: inline-block !important;
-  margin: 0.6em 0 !important;
-  padding: 0.8em 1em !important;
+header .view {
+  display: block !important;
+  margin: 0.6rem 1.5rem !important;
+  padding: 0.7rem 1rem !important;
   background: white !important;
   border: 2px solid var(--primary-color) !important;
   border-radius: 6px !important;
-  transition: all 0.3s ease !important;
-  width: 100% !important;
   text-align: center !important;
-  box-sizing: border-box !important;
   font-weight: 500 !important;
-  box-shadow: 0 2px 8px rgba(3, 102, 214, 0.08) !important;
+  transition: var(--transition) !important;
+  box-shadow: 0 2px 6px rgba(3, 102, 214, 0.08) !important;
 }
 
-.view:hover {
+header .view:hover {
   background: var(--primary-light) !important;
-  border-color: var(--primary-dark) !important;
-  box-shadow: 0 6px 16px rgba(3, 102, 214, 0.15) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(3, 102, 214, 0.15) !important;
+}
+
+header .view:last-child {
+  margin-bottom: 1.5rem !important;
+}
+
+/* -------------------- MAIN CONTENT SECTION -------------------- */
+section {
+  max-width: 800px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  float: none !important;
+}
+
+section > * {
+  margin-bottom: var(--spacing-unit);
+}
+
+section > *:last-child {
+  margin-bottom: 0;
+}
+
+/* -------------------- TYPOGRAPHY -------------------- */
+h1 {
+  font-size: 2rem !important;
+  margin: 0 0 1.5rem 0 !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 3px solid var(--primary-color) !important;
+  color: var(--primary-dark) !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+  margin: 2.5rem 0 1rem 0 !important;
+  padding-bottom: 0.4rem !important;
+  border-bottom: 2px solid var(--primary-color) !important;
+  color: var(--primary-dark) !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+}
+
+h3 {
+  font-size: 1.25rem !important;
+  margin: 2rem 0 0.8rem 0 !important;
+  color: var(--primary-dark) !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+}
+
+p {
+  margin: 0 0 1rem 0 !important;
+  line-height: 1.7 !important;
+}
+
+strong, b {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+em, i {
+  color: var(--text-secondary);
+}
+
+/* -------------------- LINKS -------------------- */
+a {
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+  transition: var(--transition) !important;
+}
+
+a:hover {
+  color: var(--primary-hover) !important;
+  text-decoration: underline !important;
+}
+
+/* Navigation links in content */
+section > p:first-child a {
+  display: inline-block !important;
+  padding: 0.6rem 1rem !important;
+  margin: 0 0.5rem 0.5rem 0 !important;
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 6px !important;
+  background: white !important;
+  font-weight: 500 !important;
+  transition: var(--transition) !important;
+}
+
+section > p:first-child a:hover {
+  background: var(--primary-light) !important;
+  text-decoration: none !important;
   transform: translateY(-2px) !important;
 }
 
-/* Improve code blocks */
+/* -------------------- LISTS -------------------- */
+ul, ol {
+  margin: 0 0 1.5rem 0 !important;
+  padding-left: 2rem !important;
+}
+
+li {
+  margin-bottom: 0.5rem !important;
+  line-height: 1.7 !important;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin: 0.5rem 0 !important;
+}
+
+/* -------------------- CODE BLOCKS -------------------- */
 code {
   background-color: var(--bg-light);
-  padding: 0.2em 0.5em;
+  padding: 0.2em 0.4em;
   border-radius: 4px;
-  font-size: 90%;
+  font-size: 0.9em;
   border: 1px solid var(--border-color);
   font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 }
 
 pre {
-  background-color: var(--bg-light);
-  padding: 1em;
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-  overflow-x: auto;
-  line-height: 1.5;
+  background-color: var(--bg-light) !important;
+  padding: 1rem !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--border-color) !important;
+  overflow-x: auto !important;
+  margin: 1.5rem 0 !important;
 }
 
 pre code {
@@ -265,205 +230,162 @@ pre code {
   padding: 0;
 }
 
-/* Better blockquote styling */
+/* -------------------- BLOCKQUOTES -------------------- */
 blockquote {
-  border-left: 5px solid var(--primary-color);
-  padding: 0.8em 0 0.8em 1.2em;
-  margin-left: 0;
-  margin-right: 0;
-  color: var(--text-secondary);
-  background-color: var(--primary-light);
-  border-radius: 0 4px 4px 0;
-  font-style: italic;
-}
-
-/* Improve table styling */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1.2em 0;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-table th,
-table td {
-  border: 1px solid var(--border-color);
-  padding: 0.8em 1em;
-  text-align: left;
-}
-
-table th {
-  background-color: var(--bg-light);
-  font-weight: 600;
-  color: var(--primary-dark);
-  border-bottom: 2px solid var(--primary-color);
-}
-
-table tr:nth-child(even) {
-  background-color: rgba(3, 102, 214, 0.02);
-}
-
-table tr:hover {
-  background-color: var(--primary-light);
-}
-
-/* Better horizontal rule with blue tint */
-hr {
-  border: none;
-  border-top: 2px solid var(--primary-color);
-  margin: 2.5em 0;
-  opacity: 0.4;
-}
-
-section > hr {
-  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-  border: none;
-  height: 1px;
-  margin: 2.5em 0;
-}
-
-/* Strong emphasis styling */
-strong, b {
-  color: var(--primary-dark);
-  font-weight: 600;
-}
-
-/* Additional blue-themed elements */
-em, i {
-  color: var(--text-secondary);
-}
-
-/* Better list styling */
-body ul, body ol {
-  padding-left: 2.2em !important;
-  margin: 0.8em 0 !important;
-}
-
-body li {
-  margin-bottom: 0.6em !important;
-  line-height: 1.6 !important;
-}
-
-/* Nested lists */
-body ul ul, body ol ol {
-  margin: 0.4em 0 !important;
-}
-
-/* Improve styling of inline navigation links */
-section > p a {
-  padding: 0.7em 1.2em !important;
-  margin: 0.5em 0.4em !important;
-  display: inline-block !important;
-  border: 2px solid var(--primary-color) !important;
-  background-color: white !important;
-  border-radius: 6px !important;
-  font-weight: 500 !important;
-  box-shadow: 0 2px 8px rgba(3, 102, 214, 0.08) !important;
-  transition: all 0.3s ease !important;
-}
-
-section > p a:hover {
+  border-left: 4px solid var(--primary-color) !important;
+  padding: 0.8rem 0 0.8rem 1.2rem !important;
+  margin: 1.5rem 0 !important;
+  color: var(--text-secondary) !important;
   background-color: var(--primary-light) !important;
-  border-color: var(--primary-dark) !important;
-  box-shadow: 0 6px 16px rgba(3, 102, 214, 0.15) !important;
-  transform: translateY(-2px) !important;
+  border-radius: 0 4px 4px 0 !important;
 }
 
-/* Link styling for different states */
-a:visited {
-  color: #6f42c1;
+/* -------------------- TABLES -------------------- */
+table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 1.5rem 0 !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
 }
 
-/* Make headers more prominent with blue */
-h1 a, h2 a, h3 a {
-  color: inherit;
+th, td {
+  border: 1px solid var(--border-color) !important;
+  padding: 0.75rem 1rem !important;
+  text-align: left !important;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover {
-  color: var(--primary-color);
+th {
+  background-color: var(--bg-light) !important;
+  font-weight: 600 !important;
+  color: var(--primary-dark) !important;
+  border-bottom: 2px solid var(--primary-color) !important;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 1200px) {
-  body .wrapper {
+tr:nth-child(even) {
+  background-color: rgba(3, 102, 214, 0.02) !important;
+}
+
+tr:hover {
+  background-color: var(--primary-light) !important;
+}
+
+/* -------------------- HORIZONTAL RULES -------------------- */
+hr {
+  border: none !important;
+  height: 2px !important;
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent) !important;
+  margin: 2rem 0 !important;
+  opacity: 0.5 !important;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  grid-column: 1 / -1 !important;
+  margin-top: 4rem !important;
+  padding: 2rem !important;
+  text-align: center !important;
+  border-top: 2px solid var(--border-color) !important;
+  background-color: var(--bg-light) !important;
+  border-radius: var(--border-radius) !important;
+}
+
+footer p {
+  margin: 0.5rem 0 !important;
+  font-size: 0.9rem !important;
+}
+
+/* -------------------- RESPONSIVE DESIGN -------------------- */
+
+/* Tablet and smaller desktops */
+@media (max-width: 1024px) {
+  .wrapper {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
-    padding: 2rem !important;
+    padding: 1.5rem !important;
   }
 
-  body header {
+  header {
     position: static !important;
-    top: auto !important;
-    margin-bottom: 2rem !important;
     width: 100% !important;
-  }
-
-  body section {
-    grid-column: 1 !important;
-    padding-right: 0 !important;
-  }
-
-  body footer {
-    grid-column: 1 !important;
-    margin-left: 0 !important;
+    max-width: 600px !important;
+    margin: 0 auto 2rem auto !important;
   }
 
   header img {
-    border-radius: 14px !important;
-    margin: 0 0 1.5em 0 !important;
-  }
-
-  header h1 {
-    text-align: left !important;
-    margin-top: 0 !important;
-  }
-
-  header p {
-    text-align: left !important;
-  }
-}
-
-/* Responsive for mobile */
-@media (max-width: 768px) {
-  body .wrapper {
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-
-  body header {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 1.8em !important;
-  }
-
-  h2 {
-    font-size: 1.3em !important;
-  }
-
-  h3 {
-    font-size: 1.1em !important;
+    max-height: 400px !important;
   }
 
   section {
-    font-size: 1em !important;
-  }
-
-  header p {
-    font-size: 0.95em;
-  }
-
-  .view {
-    margin: 0.6em 0 !important;
-    padding: 0.8em 1em !important;
-  }
-
-  section > p a {
-    display: inline-block !important;
-    margin: 0.4em 0.3em !important;
-    padding: 0.6em 0.8em !important;
+    max-width: 100% !important;
   }
 }
 
+/* Mobile devices */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 1rem !important;
+    gap: 1.5rem !important;
+  }
+
+  header {
+    max-width: 100% !important;
+  }
+
+  header img {
+    max-height: 300px !important;
+  }
+
+  h1 {
+    font-size: 1.75rem !important;
+  }
+
+  h2 {
+    font-size: 1.35rem !important;
+  }
+
+  h3 {
+    font-size: 1.15rem !important;
+  }
+
+  section > p:first-child a {
+    display: block !important;
+    margin: 0 0 0.5rem 0 !important;
+    text-align: center !important;
+  }
+
+  ul, ol {
+    padding-left: 1.5rem !important;
+  }
+}
+
+/* Very small mobile devices */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .wrapper {
+    padding: 0.75rem !important;
+  }
+
+  header h1 {
+    font-size: 1.3rem !important;
+  }
+
+  header p {
+    font-size: 0.85rem !important;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.25rem !important;
+  }
+
+  h3 {
+    font-size: 1.1rem !important;
+  }
+}
