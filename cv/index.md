@@ -8,121 +8,76 @@ title: "CV – Cory Pleasance"
 
 ---
 
-**BSc Data Science & Artificial Intelligence – University of Stirling**  
+**BSc Data Science & Artificial Intelligence – University of Stirling**
 *Focused on machine learning, LLM research, and high-performance systems.*
 
 ---
 
-## Contact Information
+## Contact
 
-- **Nationality:** UK / Malta (EU)
 - **Email:** [corypleasance05@gmail.com](mailto:corypleasance05@gmail.com)
-- **GitHub:** [github.com/Cpleasance](https://github.com/Cpleasance)  
-- **LinkedIn:** [linkedin.com/in/cory-pleasance-b99b80205](https://www.linkedin.com/in/cory-pleasance-b99b80205/)  
+- **GitHub:** [github.com/Cpleasance](https://github.com/Cpleasance)
+- **LinkedIn:** [linkedin.com/in/cory-pleasance-b99b80205](https://www.linkedin.com/in/cory-pleasance-b99b80205/)
 - **Kaggle:** [kaggle.com/cpleasance](https://www.kaggle.com/cpleasance)
 
 ---
 
 ## Profile
 
-A BSc Data Science and Artificial Intelligence student who is passionate about machine learning and data science, with a strong emphasis on research-led projects. My primary focus is on Large Language Models, developing prompting strategies, performing adversarial/jailbreak testing, engineering models for robustness, and evaluating performance. I highly enjoy integrating LLMs into production-grade systems. With a keen interest in High-Performance Computing and distributed training across multi-GPU/CPU/TPU setups. I thrive on intellectually challenging roles that grant autonomy while enabling close collaboration within focused R&D teams, big-tech ML groups, or applied domains such as healthcare and fintech.
+Data Science and AI student focused on Large Language Model security and robustness. Currently researching LLM vulnerabilities through red teaming at University of Stirling. Experienced in distributed training, adversarial testing, and building production ML systems.
 
 ---
 
 ## Technical Skills
 
-**Programming:** Python (strong), Java, SQL, C, x86 Assembly; environment management with Conda/Anaconda.
+**Languages:** Python, Java, SQL, C, x86 Assembly
 
-**Machine Learning & Frameworks:** PyTorch, scikit-learn, Hugging Face Transformers; model evaluation and reproducible experiments.
+**ML/AI:** PyTorch, scikit-learn, Hugging Face Transformers, prompt engineering, adversarial testing
 
-**LLMs & NLP:** Prompt engineering, adversarial/jailbreak testing, evaluation of robustness and alignment.
+**Infrastructure:** Docker, Kubernetes, Linux, CUDA, SLURM, Git
 
-**High-Performance Computing:** Distributed training (multi-GPU/CPU/TPU), CUDA-aware workflows, MPI prototyping, cluster tooling (SLURM), performance optimisation.
-
-**MLOps & Infrastructure:** Docker, Kubernetes, model serving, experiment tracking, basic cloud concepts (AWS/GCP).
-
-**Edge & Embedded:** Raspberry Pi prototyping, sensor integration, and edge inference.
-
-**Tools & OS:** Linux (Ubuntu, Kali, Red Hat), Windows, Docker, Flask, Git.
+**HPC:** Distributed training (multi-GPU/TPU), MPI, performance optimisation
 
 ---
 
 ## Certifications
 
-### Deep Learning & Machine Learning
-- **Advanced Deep Learning Specialist** — IBM *(Jul 2025)*
-- **Deep Learning with Keras and TensorFlow** — IBM *(Jul 2025)*
-- **Introduction to Deep Learning & Neural Networks with Keras** — IBM *(Jun 2025)*
-- **Machine Learning with Python** — IBM *(Jun 2025)*
-
-### Python Programming
-- **Programming with Python Professional Certificate** — OpenEDG Python Institute *(Nov 2025)*
-- **Anaconda Python for Data Science Professional Certificate** — Anaconda *(Apr 2025)*
-- **PCEP – Certified Entry-Level Python Programmer** — OpenEDG Python Institute *(Jan 2024)*
-
-### Data Science & Statistics
-- **Foundations of Data Science** — Google *(Jul 2025)*
-- **Statistics Foundations Professional Certificate** — Wolfram *(Jan 2025)*
-
-### DevOps & Tools
-- **Practical GitHub Actions** — LinkedIn *(Dec 2024)*
-- **Learning Docker** — LinkedIn *(Dec 2024)*
-
-### Generative AI
-- **Build Your Generative AI Productivity Skills** — Microsoft *(Dec 2024)*
+- **Advanced Deep Learning Specialist** — IBM
+- **Programming with Python Professional Certificate** — OpenEDG Python Institute
+- **Foundations of Data Science** — Google
+- **Statistics Foundations Professional Certificate** — Wolfram
 
 ---
 
 ## Projects
 
-View my detailed [Projects page](/projects) for in-depth descriptions and links.
+View my detailed [Projects page](/projects) for descriptions and links.
 
 ---
 
-## Work Experience
+## Experience
 
-### Technology Support Work Experience — Deutsche Bank  
-*Technology, Data & Innovation (TDI) Department | May 2025*
+### Technology Support — Deutsche Bank
+*Technology, Data & Innovation | May 2025*
 
-- Shadowed the TDI team, supporting traders and research analysts across hardware and software systems.  
-- Assisted with workstation setup, troubleshooting trading platforms, and resolving technical issues in a fast-paced, high-availability environment.  
-- Gained exposure to enterprise IT infrastructure, support protocols, and technology operations within global banking.
+Shadowed TDI team supporting traders and research analysts. Assisted with workstation setup and troubleshooting trading platforms in a high-availability environment.
 
-### Chef de Partie & Web Assistant — The City Arms, Thames Ditton  
+### Chef de Partie & Web Developer — The City Arms
 *Aug 2023 – Apr 2024*
 
-- Progressed from Kitchen Porter to Chef de Partie, gaining hands-on experience in high-volume food prep, high pressure kitchen operations, and health & safety standards.  
-- Took initiative in digital development, designing and building websites for The City Arms and its sister pub, enhancing their online presence and customer engagement.
+Progressed from Kitchen Porter to Chef de Partie. Designed and built websites for the pub group, improving their online presence.
 
 ---
 
 ## Education
 
-### University of Stirling, Scotland UK  
-**BSc Data Science and Artificial Intelligence**  
-*Aug 2024 – May 2028*
+### University of Stirling
+**BSc Data Science and Artificial Intelligence** — *2024 – 2028*
 
-**Relevant Modules:**  
-Introduction to Computing Science, Programming and User Interface Design, Introduction to Data Science, Discrete Structures, Practical Statistics, Economic Decision Making and Markets, Data Structures & Algorithms, Scripting for Data Science, Database Principles & Applications, NoSQL Databases & Data Warehousing.
+Contributing to university research on LLM vulnerabilities through red teaming. Course representative for Computer Science year two.
 
-**Research:** Contributing to university-led research investigating LLM vulnerabilities through red teaming approaches. Actively involved in developing novel algorithms and tools for crafting adversarial prompts, evaluating model alignment robustness, and analysing failure modes in instruction-following behaviour.
-
-**Volunteering:** Course representative for Computer Science year two: representing the student body advising curriculum improvements and academic concerns.
-
-### David Game College  
-London UK - *(Oct 2022 – Jun 2024)*
-
-**A-levels:** English, Business, History.
-
-### Kent College Canterbury, UK  
-*Jan 2020 – Oct 2022*
-
-**GCSEs /IB**
-
-### Woodstock School, Uttarakhand, India  
-*(July 2018-Jan 2020)*
-
-**IB:** Middle Years Program (MYP)
+### David Game College, London
+**A-levels:** English, Business, History — *2022 – 2024*
 
 ---
 
