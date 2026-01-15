@@ -35,3 +35,6 @@ build/
 
 # Local documentation
 SITE_GUIDE.md
+
+# Local preview base theme (GitHub Pages generates its own)
+assets/css/style.css

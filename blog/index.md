@@ -24,7 +24,18 @@ Welcome to my blog, where I share insights on machine learning, LLM research, hi
 
 ## Recent Posts
 
-*Coming soon - check back for updates!*
+{% for post in site.posts %}
+### [{{ post.title }}]({{ post.url }})
+*{{ post.date | date: "%B %d, %Y" }}*
+
+{{ post.excerpt }}
+
+---
+{% endfor %}
+
+{% if site.posts.size == 0 %}
+*No posts yet - check back soon!*
+{% endif %}
 
 ---
 
