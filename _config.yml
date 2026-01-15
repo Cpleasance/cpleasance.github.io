@@ -4,3 +4,20 @@ theme: jekyll-theme-minimal
 url: https://cpleasance.github.io
 baseurl: ""  # Leave empty if repo is named cpleasance.github.io
 logo: /assets/images/avatar.png
+
+# SEO and Social
+author: Cory Pleasance
+lang: en-US
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

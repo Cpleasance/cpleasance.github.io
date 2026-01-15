@@ -1,3 +1,7 @@
+---
+title: "Home"
+---
+
 # Cory Pleasance
 
 **BSc Data Science & Artificial Intelligence** | LLM Research & Systems  
