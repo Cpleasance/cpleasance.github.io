@@ -21,9 +21,6 @@ Whether I'm writing custom bootloaders in x86 Assembly, optimizing S&P 500 forec
 
 ## Quick Links
 
-<div class="button-group">
-<a href="/cv" class="btn-primary">View Full CV</a>
-<a href="/blog" class="btn-primary">Read Blog</a>
-</div>
+[View Full CV](/cv){: .btn-primary} [Read Blog](/blog){: .btn-primary}
 
 **Connect:** [GitHub](https://github.com/Cpleasance) · [LinkedIn](https://www.linkedin.com/in/cory-pleasance-b99b80205/) · [Kaggle](https://www.kaggle.com/cpleasance) · [Email](mailto:corypleasance05@gmail.com)

@@ -201,9 +201,14 @@ a:hover {
   text-decoration: underline !important;
 }
 
-/* Page navigation at top */
-.page-nav {
-  display: block !important;
+/* Navigation paragraph styling */
+section > p:first-of-type strong {
+  font-weight: 600 !important;
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem !important;
+}
+
+section > p:first-of-type {
   text-align: center !important;
   padding: 0.8rem 1rem !important;
   margin: 0 0 2rem 0 !important;
@@ -213,7 +218,7 @@ a:hover {
   font-size: 0.95rem !important;
 }
 
-.page-nav a {
+section > p:first-of-type a {
   color: var(--primary-color) !important;
   padding: 0.3rem 0.6rem !important;
   margin: 0 0.2rem !important;
@@ -221,23 +226,18 @@ a:hover {
   display: inline-block !important;
 }
 
-.page-nav a:hover {
+section > p:first-of-type a:hover {
   background: white !important;
   border-radius: 4px !important;
   text-decoration: none !important;
 }
 
-/* Button group for aligned buttons */
-.button-group {
-  display: flex !important;
-  gap: 1rem !important;
-  margin: 1.5rem 0 !important;
-  flex-wrap: wrap !important;
-}
-
-.btn-primary {
+/* Button styling using kramdown syntax */
+.btn-primary,
+a.btn-primary {
   display: inline-block !important;
   padding: 0.8rem 1.5rem !important;
+  margin: 0 0.5rem 0.5rem 0 !important;
   border: 2px solid var(--primary-color) !important;
   border-radius: 6px !important;
   background: white !important;
@@ -246,51 +246,10 @@ a:hover {
   text-align: center !important;
   transition: var(--transition) !important;
   box-shadow: 0 2px 6px rgba(3, 102, 214, 0.08) !important;
-  flex: 1 !important;
-  min-width: 150px !important;
 }
 
-.btn-primary:hover {
-  background: var(--primary-light) !important;
-  text-decoration: none !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 4px 12px rgba(3, 102, 214, 0.15) !important;
-}
-
-/* Inline navigation links (using · separator) */
-section > p:first-child {
-  font-size: 0.95rem !important;
-  color: var(--text-secondary) !important;
-  margin-bottom: 1.5rem !important;
-}
-
-section > p:first-child a {
-  color: var(--primary-color) !important;
-  padding: 0.2rem 0.4rem !important;
-  margin: 0 !important;
-  font-weight: 500 !important;
-}
-
-section > p:first-child a:hover {
-  background: var(--primary-light) !important;
-  border-radius: 4px !important;
-  text-decoration: none !important;
-}
-
-/* Prominent action links (like "View Full CV") */
-section strong a {
-  display: inline-block !important;
-  padding: 0.7rem 1.2rem !important;
-  margin: 0 0.5rem 0.5rem 0 !important;
-  border: 2px solid var(--primary-color) !important;
-  border-radius: 6px !important;
-  background: white !important;
-  font-weight: 600 !important;
-  transition: var(--transition) !important;
-  box-shadow: 0 2px 6px rgba(3, 102, 214, 0.08) !important;
-}
-
-section strong a:hover {
+.btn-primary:hover,
+a.btn-primary:hover {
   background: var(--primary-light) !important;
   text-decoration: none !important;
   transform: translateY(-2px) !important;

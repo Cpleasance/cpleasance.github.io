@@ -2,9 +2,9 @@
 title: "Blog"
 ---
 
-<nav class="page-nav">
-[Home](/) · [CV](/cv) · [RSS Feed](/feed.xml)
-</nav>
+**Navigation:** [Home](/) · [CV](/cv) · [RSS Feed](/feed.xml)
+
+---
 
 # Blog
 

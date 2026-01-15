@@ -2,11 +2,9 @@
 title: "CV – Cory Pleasance"
 ---
 
-<div id="top"></div>
+**Navigation:** [Home](/) · [Blog](/blog) · [Download PDF](Cory_Pleasance_CV_December_2025.pdf)
 
-<nav class="page-nav">
-[Home](/) · [Blog](/blog) · [Download PDF](Cory_Pleasance_CV_December_2025.pdf)
-</nav>
+---
 
 # Cory Pleasance
 
@@ -113,6 +111,4 @@ London UK - *(Oct 2022 – Jun 2024)*
 
 ---
 
-<nav class="page-nav">
-[Back to Home](/) · [Back to Top](#top)
-</nav>
+**Navigation:** [Back to Home](/) · [Back to Top](#)
