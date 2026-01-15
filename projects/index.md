@@ -6,8 +6,6 @@ title: "Projects – Cory Pleasance"
 
 ---
 
-# Projects
-
 A showcase of my technical projects spanning machine learning, systems programming, and data science.
 
 ---
@@ -25,7 +23,7 @@ Developed ensemble models for S&P 500 forecasting using LightGBM and CatBoost wi
 - Optimized hyperparameters using Bayesian optimization
 - Competed against international data scientists
 
-[View on Kaggle](https://www.kaggle.com/cpleasance){: .btn-primary}
+[View on Kaggle](https://www.kaggle.com/cpleasance){: .btn-kaggle}
 
 ---
 
@@ -42,7 +40,7 @@ Built a modular Python pipeline using VADER for sentiment analysis, featuring cl
 - Implemented logging and error handling for production use
 - Containerized application with Docker for easy deployment
 
-[View on GitHub](https://github.com/Cpleasance){: .btn-primary}
+[View on GitHub](https://github.com/Cpleasance){: .btn-github}
 
 ---
 
@@ -59,6 +57,8 @@ Implemented a comprehensive university management system demonstrating advanced 
 - Developed graph cycle detection for course prerequisite validation
 - Created efficient search and retrieval mechanisms
 
+[View on GitHub](https://github.com/Cpleasance){: .btn-github}
+
 ---
 
 ## Custom Operating System
@@ -74,7 +74,7 @@ Developed a bootloader and operating system from scratch in x86 Assembly and C, 
 - Developed disk I/O routines using BIOS interrupts
 - Created memory management and basic kernel functionality
 
-[View on GitHub](https://github.com/Cpleasance){: .btn-primary}
+[View on GitHub](https://github.com/Cpleasance){: .btn-github}
 
 ---
 

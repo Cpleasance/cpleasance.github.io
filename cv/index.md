@@ -6,8 +6,6 @@ title: "CV – Cory Pleasance"
 
 ---
 
-# Cory Pleasance
-
 **BSc Data Science & Artificial Intelligence – University of Stirling**  
 *Focused on machine learning, LLM research, and high-performance systems.*
 

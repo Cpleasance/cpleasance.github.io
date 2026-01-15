@@ -26,3 +26,7 @@ Welcome to my blog, where I share insights on machine learning, LLM research, hi
 
 *Coming soon - check back for updates!*
 
+---
+
+**Navigation:** [Back to Home](/) · [Back to Top](#)
+

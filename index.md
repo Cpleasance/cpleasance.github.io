@@ -23,8 +23,10 @@ Whether I'm writing custom bootloaders in x86 Assembly, optimizing S&P 500 forec
 
 ---
 
-## Quick Links
-
 [View Full CV](/cv){: .btn-primary} [View Projects](/projects){: .btn-primary} [Read Blog](/blog){: .btn-primary}
 
-**Connect:** [GitHub](https://github.com/Cpleasance) · [LinkedIn](https://www.linkedin.com/in/cory-pleasance-b99b80205/) · [Kaggle](https://www.kaggle.com/cpleasance) · [Email](mailto:corypleasance05@gmail.com)
+---
+
+## Connect
+
+[GitHub](https://github.com/Cpleasance){: .social-link} · [LinkedIn](https://www.linkedin.com/in/cory-pleasance-b99b80205/){: .social-link} · [Kaggle](https://www.kaggle.com/cpleasance){: .social-link} · [Email](mailto:corypleasance05@gmail.com){: .social-link}

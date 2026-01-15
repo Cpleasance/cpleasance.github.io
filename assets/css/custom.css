@@ -256,6 +256,82 @@ a.btn-primary:hover {
   box-shadow: 0 4px 12px rgba(3, 102, 214, 0.15) !important;
 }
 
+/* GitHub button styling */
+.btn-github,
+a.btn-github {
+  display: inline-block !important;
+  padding: 0.8rem 1.5rem !important;
+  margin: 0 0.5rem 0.5rem 0 !important;
+  border: 2px solid #24292e !important;
+  border-radius: 6px !important;
+  background: #24292e !important;
+  color: white !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  transition: var(--transition) !important;
+  box-shadow: 0 2px 6px rgba(36, 41, 46, 0.15) !important;
+}
+
+.btn-github:hover,
+a.btn-github:hover {
+  background: #1b1f23 !important;
+  border-color: #1b1f23 !important;
+  color: white !important;
+  text-decoration: none !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(36, 41, 46, 0.25) !important;
+}
+
+/* Kaggle button styling */
+.btn-kaggle,
+a.btn-kaggle {
+  display: inline-block !important;
+  padding: 0.8rem 1.5rem !important;
+  margin: 0 0.5rem 0.5rem 0 !important;
+  border: 2px solid #20beff !important;
+  border-radius: 6px !important;
+  background: #20beff !important;
+  color: white !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  transition: var(--transition) !important;
+  box-shadow: 0 2px 6px rgba(32, 190, 255, 0.15) !important;
+}
+
+.btn-kaggle:hover,
+a.btn-kaggle:hover {
+  background: #1aa3d9 !important;
+  border-color: #1aa3d9 !important;
+  color: white !important;
+  text-decoration: none !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(32, 190, 255, 0.25) !important;
+}
+
+/* Social links styling */
+.social-link,
+a.social-link {
+  display: inline-block !important;
+  padding: 0.4rem 0.8rem !important;
+  margin: 0.3rem 0.2rem !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px !important;
+  background: white !important;
+  color: var(--primary-color) !important;
+  font-weight: 500 !important;
+  transition: var(--transition) !important;
+  box-shadow: 0 1px 3px rgba(3, 102, 214, 0.08) !important;
+}
+
+.social-link:hover,
+a.social-link:hover {
+  background: var(--primary-light) !important;
+  border-color: var(--primary-color) !important;
+  text-decoration: none !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 3px 8px rgba(3, 102, 214, 0.15) !important;
+}
+
 /* -------------------- LISTS -------------------- */
 ul, ol {
   margin: 0 0 1.5rem 0 !important;
@@ -509,12 +585,43 @@ hr {
 
   section > p:first-of-type {
     font-size: 0.8rem !important;
+    padding: 0.5rem 0.6rem !important;
+  }
+
+  section > p:first-of-type a {
+    display: block !important;
+    margin: 0.3rem 0 !important;
+    padding: 0.4rem 0.5rem !important;
+    text-align: center !important;
   }
 
   .btn-primary,
-  a.btn-primary {
+  a.btn-primary,
+  .btn-github,
+  a.btn-github,
+  .btn-kaggle,
+  a.btn-kaggle {
     font-size: 0.9rem !important;
     padding: 0.6rem 0.8rem !important;
+  }
+
+  .social-link,
+  a.social-link {
+    display: block !important;
+    margin: 0.4rem 0 !important;
+    text-align: center !important;
+  }
+}
+
+/* Extra small devices - collapsible navigation */
+@media (max-width: 400px) {
+  section > p:first-of-type {
+    font-size: 0.75rem !important;
+  }
+
+  section > p:first-of-type strong {
+    display: block !important;
+    margin-bottom: 0.5rem !important;
   }
 }
 
