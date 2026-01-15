@@ -2,9 +2,9 @@
 title: "Blog"
 ---
 
-[← Home](/) · [CV](/cv)
-
----
+<nav class="page-nav">
+[Home](/) · [CV](/cv) · [RSS Feed](/feed.xml)
+</nav>
 
 # Blog
 
@@ -25,8 +25,4 @@ Welcome to my blog, where I share insights on machine learning, LLM research, hi
 ## Recent Posts
 
 *Coming soon - check back for updates!*
-
----
-
-[Subscribe via RSS](/feed.xml)
 
