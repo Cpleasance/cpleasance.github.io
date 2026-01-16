@@ -8,30 +8,23 @@ title: "Home"
 
 # Cory Pleasance
 
-**BSc Data Science & Artificial Intelligence**  
-*University of Stirling*
+**Data Science & AI** · University of Stirling
 
 ---
 
-## About
-
-I am a Data Science and AI student at the University of Stirling, dedicated to the security and scalability of Large Language Models.
-
-My research concentrates on adversarial testing and red teaming to enhance model alignment, supported by a strong foundation in High-Performance Computing and distributed training.
-
-Whether I'm writing custom bootloaders in x86 Assembly, optimizing S&P 500 forecasting pipelines, or evaluating LLM robustness, I am driven by complex, research-led challenges.
+Researching LLM security through adversarial testing and red teaming. Background in distributed systems, HPC, and low-level programming.
 
 ---
 
-## Currently
+## Now
 
-- Researching LLM vulnerabilities through red teaming at University of Stirling
-- Building a distributed training framework for multi-GPU environments
-- Second year of BSc Data Science & Artificial Intelligence
+- Red teaming LLMs at University of Stirling
+- Building distributed training tools for multi-GPU
+- Year 2 of BSc Data Science & AI
 
 ---
 
-[View Full CV](/cv){: .btn-primary} [View Projects](/projects){: .btn-primary} [Read Blog](/blog){: .btn-primary}
+[CV](/cv){: .btn-primary} [Projects](/projects){: .btn-primary} [Blog](/blog){: .btn-primary}
 
 ---
 

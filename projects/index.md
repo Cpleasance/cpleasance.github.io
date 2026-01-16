@@ -1,89 +1,57 @@
 ---
-title: "Projects – Cory Pleasance"
+title: "Projects"
 ---
 
 {% include navigation.html %}
 
 ---
 
-A showcase of my technical projects spanning machine learning, systems programming, and data science.
+# Projects
 
 ---
 
-## Hull Tactical Market Prediction (Kaggle)
+## S&P 500 Market Prediction
+**Python · LightGBM · CatBoost**
 
-**Technologies:** Python, LightGBM, CatBoost, Pandas, Scikit-learn  
-**Status:** Completed
+Ensemble models for financial forecasting with time-series validation and Bayesian hyperparameter optimization. Kaggle competition entry.
 
-Developed ensemble models for S&P 500 forecasting using LightGBM and CatBoost with advanced feature engineering, time-series validation, and hyperparameter optimisation. Achieved competitive performance against global participants.
-
-**Key Achievements:**
-- Implemented sophisticated feature engineering pipeline for financial time-series data
-- Applied time-series cross-validation to prevent data leakage
-- Optimized hyperparameters using Bayesian optimization
-- Competed against international data scientists
-
-[View on Kaggle](https://www.kaggle.com/cpleasance){: .btn-kaggle}
+[Kaggle](https://www.kaggle.com/cpleasance){: .btn-kaggle}
 
 ---
 
-## Production-Grade Sentiment Analysis Pipeline
+## Sentiment Analysis Pipeline
+**Python · VADER · Flask · Docker**
 
-**Technologies:** Python, VADER, Flask, Docker  
-**Status:** Completed
+Production-grade NLP pipeline with modular architecture, CLI tooling, and containerized deployment.
 
-Built a modular Python pipeline using VADER for sentiment analysis, featuring clean architecture and CLI tooling for reproducible analysis.
-
-**Key Achievements:**
-- Designed modular, maintainable architecture following SOLID principles
-- Created comprehensive CLI interface for batch processing
-- Implemented logging and error handling for production use
-- Containerized application with Docker for easy deployment
-
-[View on GitHub](https://github.com/Cpleasance){: .btn-github}
+[GitHub](https://github.com/Cpleasance){: .btn-github}
 
 ---
 
 ## University Management System
+**Java · Data Structures**
 
-**Technologies:** Java, Data Structures, Algorithms  
-**Status:** Completed
+BST-based student records, quicksort operations, and graph-based prerequisite validation.
 
-Implemented a comprehensive university management system demonstrating advanced data structures and algorithms.
-
-**Key Achievements:**
-- Implemented binary search trees for efficient student record management
-- Applied quicksort algorithms for data sorting operations
-- Developed graph cycle detection for course prerequisite validation
-- Created efficient search and retrieval mechanisms
-
-[View on GitHub](https://github.com/Cpleasance){: .btn-github}
+[GitHub](https://github.com/Cpleasance){: .btn-github}
 
 ---
 
-## Custom Operating System
+## Custom OS
+**x86 Assembly · C**
 
-**Technologies:** x86 Assembly, C, BIOS  
-**Status:** Completed
+Bootloader and kernel from scratch. FAT12 filesystem, BIOS disk I/O, memory management.
 
-Developed a bootloader and operating system from scratch in x86 Assembly and C, implementing core OS functionality.
-
-**Key Achievements:**
-- Wrote custom bootloader in x86 Assembly
-- Implemented FAT12 filesystem support for file operations
-- Developed disk I/O routines using BIOS interrupts
-- Created memory management and basic kernel functionality
-
-[View on GitHub](https://github.com/Cpleasance/OS-Build){: .btn-github}
+[GitHub](https://github.com/Cpleasance/OS-Build){: .btn-github}
 
 ---
 
-## Current & Upcoming Projects
+## In Progress
 
-**LLM Red Teaming Research** - Contributing to university-led research investigating LLM vulnerabilities through adversarial testing and prompt engineering.
+**LLM Red Teaming** · University research on adversarial testing and model vulnerabilities
 
-**Distributed Training Framework** - Building tools for efficient multi-GPU/TPU training workflows.
+**Distributed Training Framework** · Multi-GPU/TPU training tools
 
 ---
 
-<p class="nav-footer"><a href="#top">Back to Top</a></p>
+<p class="nav-footer"><a href="#top">Top</a></p>

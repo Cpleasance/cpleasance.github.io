@@ -660,24 +660,23 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem;
   border-bottom: 1px solid var(--border-color);
-  background: var(--primary-light);
 }
 
-.drawer-header h2 {
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-  font-size: 1.1rem !important;
-  color: var(--primary-dark) !important;
+.drawer-title {
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: var(--text-secondary) !important;
 }
 
 .drawer-close {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border: none;
-  background: var(--bg-card);
+  background: transparent;
   cursor: pointer;
   font-size: 1.5rem;
   color: var(--text-secondary);
@@ -694,81 +693,71 @@ hr {
 }
 
 .drawer-content {
-  padding: 1.25rem;
-}
-
-.drawer-profile-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 1rem auto;
-  border: 3px solid var(--primary-color);
-}
-
-.drawer-description {
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-bottom: 1.5rem !important;
-  line-height: 1.5;
+  padding: 1rem;
 }
 
 .drawer-nav {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  gap: 0.25rem;
 }
 
 .drawer-nav-link {
-  display: block;
-  padding: 0.875rem 1rem;
-  background: var(--bg-light);
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
   color: var(--text-primary) !important;
   font-weight: 500;
+  font-size: 1rem;
   text-decoration: none !important;
-  transition: var(--transition);
+  transition: all 0.2s ease;
 }
 
 .drawer-nav-link:hover {
   background: var(--primary-light);
   color: var(--primary-color) !important;
+  transform: translateX(4px);
+}
+
+.drawer-nav-icon {
+  font-size: 1.25rem;
+  width: 28px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.drawer-nav-link:hover .drawer-nav-icon {
+  opacity: 1;
+}
+
+.drawer-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 1rem 0;
 }
 
 .drawer-links {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border-color);
+  padding: 0 0.5rem;
 }
 
 .drawer-link {
-  display: block;
-  padding: 0.75rem 1rem;
-  color: var(--primary-color) !important;
-  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  color: var(--text-secondary) !important;
+  font-size: 0.85rem;
   text-decoration: none !important;
   transition: var(--transition);
+  border-radius: 50px;
+  background: var(--bg-light);
 }
 
 .drawer-link:hover {
   background: var(--primary-light);
-  border-radius: 6px;
-}
-
-.drawer-status {
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  padding: 0.75rem;
-  background: var(--bg-light);
-  border-radius: 6px;
-  margin: 0 !important;
+  color: var(--primary-color) !important;
 }
 
 /* Prevent body scroll when drawer is open */
@@ -845,17 +834,13 @@ body.drawer-open {
 
   /* Site nav adjustments */
   .site-nav {
-    padding: 0.6rem 0.8rem !important;
+    gap: 0.35rem !important;
+    padding: 0.35rem !important;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.9rem !important;
     font-size: 0.85rem !important;
-  }
-
-  .site-nav .nav-label {
-    display: none !important;
-  }
-
-  .site-nav a,
-  .site-nav .nav-current {
-    padding: 0.35rem 0.5rem !important;
   }
 
   /* Buttons */
@@ -957,22 +942,16 @@ body.drawer-open {
     font-size: 1.05rem !important;
   }
 
-  /* Site nav stack vertically */
+  /* Site nav adjustments for small screens */
   .site-nav {
-    padding: 0.5rem !important;
+    flex-wrap: wrap !important;
+    gap: 0.25rem !important;
+    padding: 0.3rem !important;
+  }
+
+  .nav-item {
+    padding: 0.4rem 0.75rem !important;
     font-size: 0.8rem !important;
-  }
-
-  .site-nav .nav-separator {
-    display: none !important;
-  }
-
-  .site-nav a,
-  .site-nav .nav-current {
-    display: block !important;
-    margin: 0.15rem 0 !important;
-    padding: 0.4rem 0.6rem !important;
-    text-align: center !important;
   }
 
   /* Buttons */
@@ -1047,47 +1026,38 @@ body.drawer-open {
 
 /* -------------------- SITE NAVIGATION -------------------- */
 .site-nav {
-  text-align: center !important;
-  padding: 0.8rem 1rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  padding: 0.5rem !important;
   margin: 0 0 2rem 0 !important;
-  background: var(--primary-light) !important;
-  border-radius: 6px !important;
+  background: var(--bg-light) !important;
+  border-radius: 50px !important;
   border: 1px solid var(--border-color) !important;
-  font-size: 0.95rem !important;
 }
 
-.site-nav .nav-label {
-  font-weight: 600 !important;
-  color: var(--text-secondary) !important;
-  margin-right: 0.5rem !important;
-}
-
-.site-nav .nav-separator {
-  color: var(--text-secondary) !important;
-  margin: 0 0.3rem !important;
-}
-
-.site-nav a {
-  color: var(--primary-color) !important;
-  padding: 0.3rem 0.6rem !important;
+.nav-item {
+  padding: 0.6rem 1.25rem !important;
+  border-radius: 50px !important;
   font-weight: 500 !important;
-  display: inline-block !important;
-}
-
-.site-nav a:hover {
-  background: var(--bg-card) !important;
-  border-radius: 4px !important;
+  font-size: 0.9rem !important;
   text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  color: var(--text-secondary) !important;
+  display: inline-block !important;
 }
 
-.site-nav .nav-current {
-  color: var(--primary-dark) !important;
-  font-weight: 700 !important;
-  padding: 0.3rem 0.6rem !important;
+a.nav-item:hover {
   background: var(--bg-card) !important;
-  border-radius: 4px !important;
-  border: 2px solid var(--primary-color) !important;
-  display: inline-block !important;
+  color: var(--primary-color) !important;
+  transform: translateY(-1px) !important;
+}
+
+.nav-item.nav-current {
+  background: var(--primary-color) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px var(--shadow-color) !important;
 }
 
 /* -------------------- BREADCRUMBS -------------------- */

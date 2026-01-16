@@ -1,26 +1,22 @@
 <nav class="site-nav">
-  <span class="nav-label">Navigation:</span>
   {% if page.url == "/" %}
-    <span class="nav-current">Home</span>
+    <span class="nav-item nav-current">Home</span>
   {% else %}
-    <a href="/">Home</a>
+    <a href="/" class="nav-item">Home</a>
   {% endif %}
-  <span class="nav-separator">·</span>
   {% if page.url == "/cv/" or page.url == "/cv" %}
-    <span class="nav-current">CV</span>
+    <span class="nav-item nav-current">CV</span>
   {% else %}
-    <a href="/cv/">CV</a>
+    <a href="/cv/" class="nav-item">CV</a>
   {% endif %}
-  <span class="nav-separator">·</span>
   {% if page.url == "/projects/" or page.url == "/projects" %}
-    <span class="nav-current">Projects</span>
+    <span class="nav-item nav-current">Projects</span>
   {% else %}
-    <a href="/projects/">Projects</a>
+    <a href="/projects/" class="nav-item">Projects</a>
   {% endif %}
-  <span class="nav-separator">·</span>
   {% if page.url == "/blog/" or page.url == "/blog" or page.layout == "post" %}
-    <span class="nav-current">Blog</span>
+    <span class="nav-item nav-current">Blog</span>
   {% else %}
-    <a href="/blog/">Blog</a>
+    <a href="/blog/" class="nav-item">Blog</a>
   {% endif %}
 </nav>

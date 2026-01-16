@@ -55,30 +55,36 @@
     <!-- Mobile Drawer -->
     <aside class="mobile-drawer" id="mobile-drawer">
       <div class="drawer-header">
-        <h2>Menu</h2>
+        <span class="drawer-title">Navigate</span>
         <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
       </div>
       <div class="drawer-content">
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Profile" class="drawer-profile-img" />
-        {% endif %}
-        <p class="drawer-description">{{ site.description | default: site.github.project_tagline }}</p>
-
         <nav class="drawer-nav">
-          <a href="{{ "/" | absolute_url }}" class="drawer-nav-link">Home</a>
-          <a href="{{ "/cv/" | relative_url }}" class="drawer-nav-link">CV</a>
-          <a href="{{ "/projects/" | relative_url }}" class="drawer-nav-link">Projects</a>
-          <a href="{{ "/blog/" | relative_url }}" class="drawer-nav-link">Blog</a>
+          <a href="{{ "/" | absolute_url }}" class="drawer-nav-link">
+            <span class="drawer-nav-icon">&#8962;</span>
+            <span>Home</span>
+          </a>
+          <a href="{{ "/cv/" | relative_url }}" class="drawer-nav-link">
+            <span class="drawer-nav-icon">&#9998;</span>
+            <span>CV</span>
+          </a>
+          <a href="{{ "/projects/" | relative_url }}" class="drawer-nav-link">
+            <span class="drawer-nav-icon">&#9881;</span>
+            <span>Projects</span>
+          </a>
+          <a href="{{ "/blog/" | relative_url }}" class="drawer-nav-link">
+            <span class="drawer-nav-icon">&#9997;</span>
+            <span>Blog</span>
+          </a>
         </nav>
 
-        <div class="drawer-links">
-          {% if site.github.is_user_page %}
-          <a href="{{ site.github.owner_url }}" class="drawer-link">GitHub Profile</a>
-          {% endif %}
-          <a href="{{ "/feed.xml" | relative_url }}" class="drawer-link">RSS Feed</a>
-        </div>
+        <div class="drawer-divider"></div>
 
-        <p class="drawer-status">Last updated: 16th January 2026</p>
+        <div class="drawer-links">
+          <a href="https://github.com/Cpleasance" class="drawer-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/cory-pleasance-b99b80205/" class="drawer-link">LinkedIn</a>
+          <a href="{{ "/feed.xml" | relative_url }}" class="drawer-link">RSS</a>
+        </div>
       </div>
     </aside>
 
