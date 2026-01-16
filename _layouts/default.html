@@ -30,8 +30,62 @@
     {% include analytics.html %}
   </head>
   <body>
+    <!-- Mobile Navigation Bar -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="{{ "/" | absolute_url }}" class="mobile-nav-brand">
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" class="mobile-nav-logo" />
+        {% endif %}
+        <span class="mobile-nav-title">{{ site.title | default: site.github.repository_name }}</span>
+      </a>
+      <div class="mobile-nav-actions">
+        <button class="theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle dark mode">
+          <span class="icon-dark">&#9790;</span>
+          <span class="icon-light">&#9728;</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Mobile Drawer -->
+    <aside class="mobile-drawer" id="mobile-drawer">
+      <div class="drawer-header">
+        <h2>Menu</h2>
+        <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+      <div class="drawer-content">
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Profile" class="drawer-profile-img" />
+        {% endif %}
+        <p class="drawer-description">{{ site.description | default: site.github.project_tagline }}</p>
+
+        <nav class="drawer-nav">
+          <a href="{{ "/" | absolute_url }}" class="drawer-nav-link">Home</a>
+          <a href="{{ "/cv/" | relative_url }}" class="drawer-nav-link">CV</a>
+          <a href="{{ "/projects/" | relative_url }}" class="drawer-nav-link">Projects</a>
+          <a href="{{ "/blog/" | relative_url }}" class="drawer-nav-link">Blog</a>
+        </nav>
+
+        <div class="drawer-links">
+          {% if site.github.is_user_page %}
+          <a href="{{ site.github.owner_url }}" class="drawer-link">GitHub Profile</a>
+          {% endif %}
+          <a href="{{ "/feed.xml" | relative_url }}" class="drawer-link">RSS Feed</a>
+        </div>
+
+        <p class="drawer-status">Last updated: 16th January 2026</p>
+      </div>
+    </aside>
+
+    <!-- Main Layout -->
     <div class="wrapper">
-      <header>
+      <!-- Desktop Sidebar -->
+      <header class="desktop-sidebar">
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
@@ -55,17 +109,20 @@
 
         <p class="view"><a href="{{ "/feed.xml" | relative_url }}">RSS Feed</a></p>
       </header>
+
+      <!-- Main Content -->
       <section>
-
-      {{ content }}
-
+        {{ content }}
       </section>
     </div>
 
-    <!-- Theme toggle script -->
     <script>
       (function() {
-        const toggle = document.getElementById('theme-toggle');
+        // Theme toggle functionality
+        const themeToggles = [
+          document.getElementById('theme-toggle'),
+          document.getElementById('theme-toggle-mobile')
+        ];
         const toggleText = document.getElementById('theme-toggle-text');
         const themeColorMeta = document.getElementById('theme-color-meta');
 
@@ -76,29 +133,73 @@
         function setTheme(theme) {
           document.documentElement.setAttribute('data-theme', theme);
           localStorage.setItem('theme', theme);
-
-          // Update toggle text
-          toggleText.textContent = theme === 'light' ? 'Dark' : 'Light';
-
-          // Update theme-color meta for mobile browsers
+          if (toggleText) {
+            toggleText.textContent = theme === 'light' ? 'Dark' : 'Light';
+          }
           themeColorMeta.setAttribute('content', theme === 'dark' ? '#0d1117' : '#0366d6');
         }
 
-        // Initialize toggle text based on current theme
-        toggleText.textContent = getTheme() === 'light' ? 'Dark' : 'Light';
+        if (toggleText) {
+          toggleText.textContent = getTheme() === 'light' ? 'Dark' : 'Light';
+        }
 
-        // Toggle theme on click
-        toggle.addEventListener('click', function() {
-          const currentTheme = getTheme();
-          const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-          setTheme(newTheme);
+        themeToggles.forEach(function(toggle) {
+          if (toggle) {
+            toggle.addEventListener('click', function() {
+              const newTheme = getTheme() === 'light' ? 'dark' : 'light';
+              setTheme(newTheme);
+            });
+          }
         });
 
-        // Listen for system theme changes
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
           if (!localStorage.getItem('theme')) {
             setTheme(e.matches ? 'dark' : 'light');
           }
+        });
+
+        // Mobile menu functionality
+        const menuToggle = document.getElementById('menu-toggle');
+        const drawerClose = document.getElementById('drawer-close');
+        const menuOverlay = document.getElementById('menu-overlay');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const body = document.body;
+
+        function openDrawer() {
+          mobileDrawer.classList.add('open');
+          menuOverlay.classList.add('open');
+          body.classList.add('drawer-open');
+          menuToggle.setAttribute('aria-expanded', 'true');
+        }
+
+        function closeDrawer() {
+          mobileDrawer.classList.remove('open');
+          menuOverlay.classList.remove('open');
+          body.classList.remove('drawer-open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        if (menuToggle) {
+          menuToggle.addEventListener('click', openDrawer);
+        }
+        if (drawerClose) {
+          drawerClose.addEventListener('click', closeDrawer);
+        }
+        if (menuOverlay) {
+          menuOverlay.addEventListener('click', closeDrawer);
+        }
+
+        // Close drawer on escape key
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            closeDrawer();
+          }
+        });
+
+        // Close drawer when clicking a nav link
+        const drawerLinks = document.querySelectorAll('.drawer-nav-link, .drawer-link');
+        drawerLinks.forEach(function(link) {
+          link.addEventListener('click', closeDrawer);
         });
       })();
     </script>
