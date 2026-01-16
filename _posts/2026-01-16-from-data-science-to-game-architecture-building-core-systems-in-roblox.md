@@ -1,7 +1,8 @@
 ---
+layout: post
 title: "From Data Science to Game Architecture: Building Core Systems in Roblox"
 date: 2026-01-16 17:37:10
-tags: [game-development, roblox, lua, learning, software-engineering, architecture, student-project]
+tags: [game-development, roblox, lua, software-engineering, architecture]
 ---
 ## Overview
 
