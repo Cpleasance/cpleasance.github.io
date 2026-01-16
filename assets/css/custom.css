@@ -1231,4 +1231,65 @@ hr {
     opacity: 1 !important;
   }
 }
-                                                  
+
+/* -------------------- DARK MODE SPECIFIC ADJUSTMENTS -------------------- */
+[data-theme="dark"] {
+  /* Code blocks */
+  code {
+    background-color: #1c2d3f !important;
+    border-color: var(--border-color) !important;
+  }
+
+  pre {
+    background-color: #1c2d3f !important;
+    border-color: var(--border-color) !important;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    background-color: var(--primary-light) !important;
+  }
+
+  /* Tables */
+  th {
+    background-color: var(--bg-light) !important;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(88, 166, 255, 0.05) !important;
+  }
+
+  tr:hover {
+    background-color: var(--primary-light) !important;
+  }
+
+  /* Horizontal rules */
+  hr {
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent) !important;
+  }
+
+  /* Images - add slight border for visibility */
+  img {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
+
+  header img {
+    border: none;
+    border-radius: 0;
+  }
+
+  /* GitHub button stays dark in both modes */
+  .btn-github,
+  a.btn-github {
+    background: #24292e !important;
+    border-color: #24292e !important;
+    color: white !important;
+  }
+
+  .btn-github:hover,
+  a.btn-github:hover {
+    background: #1b1f23 !important;
+    border-color: #1b1f23 !important;
+  }
+}
