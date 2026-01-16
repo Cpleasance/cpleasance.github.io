@@ -1,5 +1,6 @@
 ---
 title: "Home"
+description: "Cory Pleasance - Data Science & AI student at University of Stirling. Researching LLM security, distributed systems, and adversarial testing."
 ---
 
 {% include navigation.html %}
@@ -24,27 +25,27 @@ Researching LLM security through adversarial testing and red teaming. Background
 
 ---
 
-[CV](/cv){: .btn-primary} [Projects](/projects){: .btn-primary} [Blog](/blog){: .btn-primary}
+[CV](/cv/){: .btn-primary} [Projects](/projects/){: .btn-primary} [Blog](/blog/){: .btn-primary}
 
 ---
 
 ## Connect
 
 <div class="social-links">
-  <a href="https://github.com/Cpleasance" class="social-link">
-    <img src="/assets/images/icons/github.svg" alt="GitHub" class="social-icon">
+  <a href="https://github.com/Cpleasance" class="social-link" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/images/icons/github.svg" alt="GitHub profile icon" class="social-icon">
     GitHub
   </a>
-  <a href="https://www.linkedin.com/in/cory-pleasance-b99b80205/" class="social-link">
-    <img src="/assets/images/icons/linkedin.png" alt="LinkedIn" class="social-icon">
+  <a href="https://www.linkedin.com/in/cory-pleasance-b99b80205/" class="social-link" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/images/icons/linkedin.png" alt="LinkedIn profile icon" class="social-icon">
     LinkedIn
   </a>
-  <a href="https://www.kaggle.com/cpleasance" class="social-link">
-    <img src="/assets/images/icons/kaggle.svg" alt="Kaggle" class="social-icon">
+  <a href="https://www.kaggle.com/cpleasance" class="social-link" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/images/icons/kaggle.svg" alt="Kaggle profile icon" class="social-icon">
     Kaggle
   </a>
   <a href="mailto:corypleasance05@gmail.com" class="social-link">
-    <img src="/assets/images/icons/gmail.svg" alt="Email" class="social-icon">
+    <img src="/assets/images/icons/gmail.svg" alt="Email icon" class="social-icon">
     Email
   </a>
 </div>

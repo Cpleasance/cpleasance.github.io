@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+description: "Portfolio of data science, machine learning, and systems programming projects by Cory Pleasance."
 ---
 
 {% include navigation.html %}
@@ -15,7 +16,7 @@ title: "Projects"
 
 Ensemble models for financial forecasting with time-series validation and Bayesian hyperparameter optimization. Kaggle competition entry.
 
-[Kaggle](https://www.kaggle.com/cpleasance){: .btn-kaggle}
+[Kaggle](https://www.kaggle.com/cpleasance){: .btn-kaggle target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -24,7 +25,7 @@ Ensemble models for financial forecasting with time-series validation and Bayesi
 
 Production-grade NLP pipeline with modular architecture, CLI tooling, and containerized deployment.
 
-[GitHub](https://github.com/Cpleasance){: .btn-github}
+[GitHub](https://github.com/Cpleasance){: .btn-github target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -33,7 +34,7 @@ Production-grade NLP pipeline with modular architecture, CLI tooling, and contai
 
 BST-based student records, quicksort operations, and graph-based prerequisite validation.
 
-[GitHub](https://github.com/Cpleasance){: .btn-github}
+[GitHub](https://github.com/Cpleasance){: .btn-github target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -42,7 +43,7 @@ BST-based student records, quicksort operations, and graph-based prerequisite va
 
 Bootloader and kernel from scratch. FAT12 filesystem, BIOS disk I/O, memory management.
 
-[GitHub](https://github.com/Cpleasance/OS-Build){: .btn-github}
+[GitHub](https://github.com/Cpleasance/OS-Build){: .btn-github target="_blank" rel="noopener noreferrer"}
 
 ---
 

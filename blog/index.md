@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+description: "Technical blog posts on machine learning, LLMs, systems programming, and software architecture by Cory Pleasance."
 ---
 
 {% include navigation.html %}

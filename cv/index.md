@@ -1,5 +1,6 @@
 ---
 title: "CV – Cory Pleasance"
+description: "CV for Cory Pleasance - Data Science & AI student with experience in machine learning, LLM research, and high-performance computing."
 ---
 
 {% include navigation.html %}
@@ -16,9 +17,9 @@ title: "CV – Cory Pleasance"
 ## Contact
 
 - **Email:** [corypleasance05@gmail.com](mailto:corypleasance05@gmail.com)
-- **GitHub:** [github.com/Cpleasance](https://github.com/Cpleasance)
-- **LinkedIn:** [linkedin.com/in/cory-pleasance-b99b80205](https://www.linkedin.com/in/cory-pleasance-b99b80205/)
-- **Kaggle:** [kaggle.com/cpleasance](https://www.kaggle.com/cpleasance)
+- **GitHub:** [github.com/Cpleasance](https://github.com/Cpleasance){: target="_blank" rel="noopener noreferrer"}
+- **LinkedIn:** [linkedin.com/in/cory-pleasance-b99b80205](https://www.linkedin.com/in/cory-pleasance-b99b80205/){: target="_blank" rel="noopener noreferrer"}
+- **Kaggle:** [kaggle.com/cpleasance](https://www.kaggle.com/cpleasance){: target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -51,7 +52,7 @@ Data Science and AI student focused on Large Language Model security and robustn
 
 ## Projects
 
-View my detailed [Projects page](/projects) for descriptions and links.
+View my detailed [Projects page](/projects/) for descriptions and links.
 
 ---
 

@@ -34,7 +34,7 @@
     <nav class="mobile-nav" id="mobile-nav">
       <a href="{{ "/" | absolute_url }}" class="mobile-nav-brand">
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" class="mobile-nav-logo" />
+          <img src="{{site.logo | relative_url}}" alt="Cory Pleasance site logo" class="mobile-nav-logo" />
         {% endif %}
         <span class="mobile-nav-title">{{ site.title | default: site.github.repository_name }}</span>
       </a>
@@ -81,8 +81,8 @@
         <div class="drawer-divider"></div>
 
         <div class="drawer-links">
-          <a href="https://github.com/Cpleasance" class="drawer-link">GitHub</a>
-          <a href="https://www.linkedin.com/in/cory-pleasance-b99b80205/" class="drawer-link">LinkedIn</a>
+          <a href="https://github.com/Cpleasance" class="drawer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/cory-pleasance-b99b80205/" class="drawer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="{{ "/feed.xml" | relative_url }}" class="drawer-link">RSS</a>
         </div>
       </div>
@@ -95,7 +95,7 @@
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img src="{{site.logo | relative_url}}" alt="Cory Pleasance site logo" />
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -103,10 +103,10 @@
         <p class="status-badge">Last updated: 16th January 2026</p>
 
         <!-- Theme toggle button -->
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
           <span class="theme-toggle-icon icon-dark">&#9790;</span>
           <span class="theme-toggle-icon icon-light">&#9728;</span>
-          <span class="theme-toggle-text" id="theme-toggle-text">Dark</span>
+          <span class="theme-toggle-text" id="theme-toggle-text">Dark Mode</span>
         </button>
 
         {% if site.github.is_user_page %}
@@ -140,13 +140,13 @@
           document.documentElement.setAttribute('data-theme', theme);
           localStorage.setItem('theme', theme);
           if (toggleText) {
-            toggleText.textContent = theme === 'light' ? 'Dark' : 'Light';
+            toggleText.textContent = theme === 'light' ? 'Dark Mode' : 'Light Mode';
           }
           themeColorMeta.setAttribute('content', theme === 'dark' ? '#0d1117' : '#0366d6');
         }
 
         if (toggleText) {
-          toggleText.textContent = getTheme() === 'light' ? 'Dark' : 'Light';
+          toggleText.textContent = getTheme() === 'light' ? 'Dark Mode' : 'Light Mode';
         }
 
         themeToggles.forEach(function(toggle) {
