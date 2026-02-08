@@ -373,6 +373,30 @@ a.btn-kaggle:hover {
   box-shadow: 0 4px 12px rgba(32, 190, 255, 0.25) !important;
 }
 
+/* Private repo button styling */
+.btn-private,
+a.btn-private {
+  display: inline-block !important;
+  padding: 0.8rem 1.5rem !important;
+  margin: 0 0.5rem 0.5rem 0 !important;
+  border: 2px solid var(--text-secondary) !important;
+  border-radius: 6px !important;
+  background: var(--bg-light) !important;
+  color: var(--text-secondary) !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  cursor: default !important;
+  opacity: 0.7 !important;
+  box-shadow: none !important;
+}
+
+.btn-private:hover,
+a.btn-private:hover {
+  text-decoration: none !important;
+  transform: none !important;
+  color: var(--text-secondary) !important;
+}
+
 /* Social links styling */
 .social-links {
   display: flex !important;
@@ -614,6 +638,11 @@ hr {
   top: 6px;
 }
 
+/* Reading time */
+.reading-time {
+  font-style: italic;
+}
+
 /* -------------------- MOBILE DRAWER -------------------- */
 .menu-overlay {
   display: none;
@@ -665,11 +694,11 @@ hr {
 }
 
 .drawer-title {
-  font-size: 0.8rem !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  color: var(--text-secondary) !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
 }
 
 .drawer-close {
@@ -719,6 +748,16 @@ hr {
   background: var(--primary-light);
   color: var(--primary-color) !important;
   transform: translateX(4px);
+}
+
+.drawer-nav-active {
+  background: var(--primary-light);
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+.drawer-nav-active .drawer-nav-icon {
+  opacity: 1;
 }
 
 .drawer-nav-icon {

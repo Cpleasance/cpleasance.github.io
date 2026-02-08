@@ -60,19 +60,19 @@
       </div>
       <div class="drawer-content">
         <nav class="drawer-nav">
-          <a href="{{ "/" | absolute_url }}" class="drawer-nav-link">
+          <a href="{{ "/" | absolute_url }}" class="drawer-nav-link{% if page.url == "/" %} drawer-nav-active{% endif %}">
             <span class="drawer-nav-icon">&#8962;</span>
             <span>Home</span>
           </a>
-          <a href="{{ "/cv/" | relative_url }}" class="drawer-nav-link">
+          <a href="{{ "/cv/" | relative_url }}" class="drawer-nav-link{% if page.url == "/cv/" or page.url == "/cv" %} drawer-nav-active{% endif %}">
             <span class="drawer-nav-icon">&#9998;</span>
             <span>CV</span>
           </a>
-          <a href="{{ "/projects/" | relative_url }}" class="drawer-nav-link">
+          <a href="{{ "/projects/" | relative_url }}" class="drawer-nav-link{% if page.url == "/projects/" or page.url == "/projects" %} drawer-nav-active{% endif %}">
             <span class="drawer-nav-icon">&#9881;</span>
             <span>Projects</span>
           </a>
-          <a href="{{ "/blog/" | relative_url }}" class="drawer-nav-link">
+          <a href="{{ "/blog/" | relative_url }}" class="drawer-nav-link{% if page.url == "/blog/" or page.url == "/blog" or page.layout == "post" %} drawer-nav-active{% endif %}">
             <span class="drawer-nav-icon">&#9997;</span>
             <span>Blog</span>
           </a>
@@ -100,7 +100,7 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <p class="status-badge">Last updated: 16th January 2026</p>
+        <p class="status-badge">Last updated: {{ site.time | date: "%B %Y" }}</p>
 
         <!-- Theme toggle button -->
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">

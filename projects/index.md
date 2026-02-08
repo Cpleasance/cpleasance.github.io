@@ -25,7 +25,7 @@ Ensemble models for financial forecasting with time-series validation and Bayesi
 
 Production-grade NLP pipeline with modular architecture, CLI tooling, and containerized deployment.
 
-[GitHub](https://github.com/Cpleasance){: .btn-github target="_blank" rel="noopener noreferrer"}
+[GitHub](https://github.com/Cpleasance/sentiment-pipeline){: .btn-github target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -34,7 +34,7 @@ Production-grade NLP pipeline with modular architecture, CLI tooling, and contai
 
 BST-based student records, quicksort operations, and graph-based prerequisite validation.
 
-[GitHub](https://github.com/Cpleasance){: .btn-github target="_blank" rel="noopener noreferrer"}
+[Private Repo](javascript:void(0)){: .btn-private}
 
 ---
 

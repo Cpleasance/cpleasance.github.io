@@ -9,10 +9,14 @@ logo: /assets/images/avatar.png
 author: Cory Pleasance
 lang: en-US
 
+# Social sharing image
+image: /assets/images/og-banner.svg
+
 # Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing
 exclude:
@@ -21,3 +25,4 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - tools

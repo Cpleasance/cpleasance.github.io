@@ -37,7 +37,7 @@ Researching LLM security through adversarial testing and red teaming. Background
     GitHub
   </a>
   <a href="https://www.linkedin.com/in/cory-pleasance-b99b80205/" class="social-link" target="_blank" rel="noopener noreferrer">
-    <img src="/assets/images/icons/linkedin.png" alt="LinkedIn profile icon" class="social-icon">
+    <img src="/assets/images/icons/linkedin.svg" alt="LinkedIn profile icon" class="social-icon">
     LinkedIn
   </a>
   <a href="https://www.kaggle.com/cpleasance" class="social-link" target="_blank" rel="noopener noreferrer">
