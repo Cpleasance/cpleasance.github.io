@@ -1,43 +1,53 @@
 ---
 title: "CV – Cory Pleasance"
-description: "CV for Cory Pleasance - Data Science & AI student with experience in machine learning, LLM research, and high-performance computing."
+description: "CV for Cory Pleasance - Data Science & AI student researching LLM security and mechanistic interpretability at University of Stirling."
 ---
 
 {% include navigation.html %}
 
 <p class="download-link"><a href="Cory_Pleasance_CV_December_2025.pdf" class="btn-primary">Download PDF</a></p>
 
----
-
-**BSc Data Science & Artificial Intelligence – University of Stirling**
-*Focused on machine learning, LLM research, and high-performance systems.*
-
----
-
-## Contact
-
-- **Email:** [corypleasance05@gmail.com](mailto:corypleasance05@gmail.com)
-- **GitHub:** [github.com/Cpleasance](https://github.com/Cpleasance){: target="_blank" rel="noopener noreferrer"}
-- **LinkedIn:** [linkedin.com/in/cory-pleasance-b99b80205](https://www.linkedin.com/in/cory-pleasance-b99b80205/){: target="_blank" rel="noopener noreferrer"}
-- **Kaggle:** [kaggle.com/cpleasance](https://www.kaggle.com/cpleasance){: target="_blank" rel="noopener noreferrer"}
-
----
-
 ## Profile
 
-Data Science and AI student focused on Large Language Model security and robustness. Currently researching LLM vulnerabilities through red teaming at University of Stirling. Experienced in distributed training, adversarial testing, and building production ML systems.
+Data Science and AI student researching Large Language Model security and mechanistic interpretability at University of Stirling. Working with linear probes and adversarial testing frameworks to evaluate alignment robustness across LLM architectures. Experienced in distributed training, production ML pipelines, and low-level systems programming.
+
+---
+
+## Research
+
+### LLM Security Research Assistant
+**University of Stirling** · Supervisor: Dr. Paulius Stankaitis · *Sep 2024 – Present*
+
+- Training linear probes on Olmo-3-7B-Think layer activations to isolate safety-critical decision boundaries, identifying which transformer layers encode refusal vs. compliance behaviour
+- Developed adversarial prompt testing framework that systematically evaluates alignment robustness across multiple LLM architectures, cataloguing failure modes in instruction-following behaviour
+- Building cross-model activation simulator that predicts safety-relevant neural patterns from one architecture to another, reducing the cost of per-model safety audits
+- Engineered dual-GPU analysis pipeline in PyTorch and Hugging Face Transformers for large-scale activation extraction and processing across 32 transformer layers
+- Co-authoring research paper on novel approaches to mechanistic interpretability for LLM safety evaluation
+
+---
+
+## Education
+
+### University of Stirling
+**BSc Data Science and Artificial Intelligence** · On track for First Class Honours · *2024 – 2028*
+
+- **Modules:** Data Structures & Algorithms, Database Principles, Scripting for Data Science, NoSQL & Data Warehousing, Systems Programming, Practical Statistics
+- Year 2 Computer Science Course Representative — representing 80+ students on curriculum and academic matters
+
+### David Game College, London
+**A-levels:** English, Business, History · *2022 – 2024*
 
 ---
 
 ## Technical Skills
 
-**Languages:** Python, Java, SQL, C, x86 Assembly
+**Languages:** Python (primary), Java, SQL, C, x86 Assembly
 
-**ML/AI:** PyTorch, scikit-learn, Hugging Face Transformers, prompt engineering, adversarial testing
+**ML & Data:** PyTorch, scikit-learn, Hugging Face Transformers, LightGBM, CatBoost, Optuna, pandas, NumPy
 
-**Infrastructure:** Docker, Kubernetes, Linux, CUDA, SLURM, Git
+**LLM Research:** Mechanistic interpretability, linear probes, adversarial prompt testing, alignment evaluation, red teaming
 
-**HPC:** Distributed training (multi-GPU/TPU), MPI, performance optimisation
+**Infrastructure:** Linux (Ubuntu, Kali, Red Hat), Git, Docker, Flask, CUDA, SLURM, Jupyter, Conda
 
 ---
 
@@ -50,36 +60,27 @@ Data Science and AI student focused on Large Language Model security and robustn
 
 ---
 
-## Projects
-
-View my detailed [Projects page](/projects/) for descriptions and links.
-
----
-
 ## Experience
 
-### Technology Support — Deutsche Bank
-*Technology, Data & Innovation | May 2025*
+### Technology, Data & Innovation — Deutsche Bank
+*May 2025 · London*
 
-Shadowed TDI team supporting traders and research analysts. Assisted with workstation setup and troubleshooting trading platforms in a high-availability environment.
+- Completed two-week placement within the TDI team, observing how technology teams support traders and research analysts across enterprise trading infrastructure
+- Assisted with workstation provisioning and trading platform troubleshooting, resolving hardware and software issues under SLA-driven timelines
+- Gained hands-on exposure to Bloomberg terminal workflows, incident response procedures, and integration between trading systems, risk platforms, and analytics tooling
 
 ### Chef de Partie & Web Developer — The City Arms
-*Aug 2023 – Apr 2024*
+*Aug 2023 – Apr 2024 · Thames Ditton*
 
-Progressed from Kitchen Porter to Chef de Partie. Designed and built websites for the pub group, improving their online presence.
-
----
-
-## Education
-
-### University of Stirling
-**BSc Data Science and Artificial Intelligence** — *2024 – 2028*
-
-Contributing to university research on LLM vulnerabilities through red teaming. Course representative for Computer Science year two.
-
-### David Game College, London
-**A-levels:** English, Business, History — *2022 – 2024*
+- Promoted from Kitchen Porter to Chef de Partie within 4 months while concurrently self-teaching programming and web development
+- Designed and shipped responsive websites for the pub and its sister establishment using HTML, CSS, and JavaScript, directly improving online visibility and bookings
 
 ---
 
-<p class="nav-footer"><a href="#top">Back to Top</a></p>
+## Projects
+
+View detailed descriptions and links on the [Projects page](/projects/).
+
+---
+
+{% include footer.html %}

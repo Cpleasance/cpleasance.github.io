@@ -24,4 +24,4 @@ description: "Technical blog posts on machine learning, LLMs, systems programmin
 *No posts yet - check back soon!*
 {% endif %}
 
-<p class="nav-footer"><a href="/feed.xml">RSS</a> · <a href="#top">Top</a></p>
+{% include footer.html %}

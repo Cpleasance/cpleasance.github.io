@@ -1,33 +1,29 @@
 ---
 title: "Home"
-description: "Cory Pleasance - Data Science & AI student at University of Stirling. Researching LLM security, distributed systems, and adversarial testing."
+description: "Cory Pleasance - Data Science & AI student at University of Stirling. Researching LLM security, mechanistic interpretability, and adversarial testing."
 ---
 
 {% include navigation.html %}
-
----
 
 # Cory Pleasance
 
 **Data Science & AI** · University of Stirling
 
----
-
-Researching LLM security through adversarial testing and red teaming. Background in distributed systems, HPC, and low-level programming.
-
----
+Researching LLM security and mechanistic interpretability through adversarial testing and red teaming. Background in distributed systems, HPC, and low-level programming.
 
 ## Now
 
-- Red teaming LLMs at University of Stirling
-- Building distributed training tools for multi-GPU
-- Year 2 of BSc Data Science & AI
+- Research assistant studying LLM safety — training linear probes on transformer layer activations and co-authoring a paper on mechanistic interpretability
+- Competing in Hull Tactical S&P 500 forecasting challenge on Kaggle
+- Year 2 of BSc Data Science & AI, on track for First Class Honours
 
----
+## Latest Post
 
-[CV](/cv/){: .btn-primary} [Projects](/projects/){: .btn-primary} [Blog](/blog/){: .btn-primary}
+{% for post in site.posts limit:1 %}
+{% assign words = post.content | number_of_words %}{% assign minutes = words | divided_by: 200 %}{% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}[**{{ post.title }}**]({{ post.url }}) · *{{ post.date | date: "%B %d, %Y" }} · {{ minutes }} min read*
 
----
+{{ post.excerpt | strip_html | truncatewords: 30 }}
+{% endfor %}
 
 ## Connect
 
