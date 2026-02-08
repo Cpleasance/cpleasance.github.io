@@ -190,6 +190,14 @@ section {
   float: none !important;
   position: relative !important;
   z-index: 1 !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+}
+
+/* Prevent images from overflowing */
+section img {
+  max-width: 100%;
+  height: auto;
 }
 
 section > * {
@@ -266,36 +274,6 @@ a:hover {
   text-decoration: underline !important;
 }
 
-/* Navigation paragraph styling */
-section > p:first-of-type strong {
-  font-weight: 600 !important;
-  color: var(--text-secondary) !important;
-  font-size: 0.9rem !important;
-}
-
-section > p:first-of-type {
-  text-align: center !important;
-  padding: 0.8rem 1rem !important;
-  margin: 0 0 2rem 0 !important;
-  background: var(--primary-light) !important;
-  border-radius: 6px !important;
-  border: 1px solid var(--border-color) !important;
-  font-size: 0.95rem !important;
-}
-
-section > p:first-of-type a {
-  color: var(--primary-color) !important;
-  padding: 0.3rem 0.6rem !important;
-  margin: 0 0.2rem !important;
-  font-weight: 500 !important;
-  display: inline-block !important;
-}
-
-section > p:first-of-type a:hover {
-  background: var(--bg-card) !important;
-  border-radius: 4px !important;
-  text-decoration: none !important;
-}
 
 /* Button styling using kramdown syntax */
 .btn-primary,
@@ -673,6 +651,7 @@ hr {
   width: 300px;
   max-width: 85vw;
   height: 100vh;
+  height: 100dvh;
   background: var(--bg-card);
   z-index: 1002;
   overflow-y: auto;
@@ -882,14 +861,28 @@ body.drawer-open {
     font-size: 0.85rem !important;
   }
 
-  /* Buttons */
+  /* Buttons - all types go full-width */
   .btn-primary,
-  a.btn-primary {
+  a.btn-primary,
+  .btn-github,
+  a.btn-github,
+  .btn-kaggle,
+  a.btn-kaggle,
+  .btn-private,
+  a.btn-private {
     display: block !important;
     width: 100% !important;
     margin: 0 0 0.8rem 0 !important;
     padding: 0.7rem 1rem !important;
     font-size: 0.95rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Tables - horizontal scroll */
+  table {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
   }
 
   /* Post header mobile styles */
@@ -1050,15 +1043,15 @@ body.drawer-open {
   }
 }
 
-/* Extra small devices - collapsible navigation */
-@media (max-width: 400px) {
-  section > p:first-of-type {
-    font-size: 0.75rem !important;
-  }
-
-  section > p:first-of-type strong {
-    display: block !important;
-    margin-bottom: 0.5rem !important;
+/* -------------------- REDUCED MOTION -------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
@@ -1328,7 +1321,9 @@ a.nav-item:hover {
   .desktop-sidebar,
   .mobile-nav,
   .mobile-drawer,
-  .menu-overlay {
+  .menu-overlay,
+  .site-nav,
+  .breadcrumbs {
     display: none !important;
   }
 
@@ -1409,9 +1404,15 @@ a.nav-item:hover {
   }
 
   /* Images - add slight border for visibility */
-  img {
+  img:not(.social-icon):not(.mobile-nav-logo) {
     border: 1px solid var(--border-color);
     border-radius: 4px;
+  }
+
+  /* Make social icons visible on dark backgrounds */
+  .social-icon {
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
   }
 
   header img {
