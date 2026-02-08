@@ -36,10 +36,29 @@
   --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
+/* -------------------- SKIP LINK -------------------- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: white !important;
+  border-radius: 0 0 6px 6px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* -------------------- LAYOUT STRUCTURE -------------------- */
 html {
   scroll-behavior: smooth;
   background-color: var(--bg-page);
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -213,11 +232,6 @@ section > hr:last-of-type {
   margin-top: 3rem !important;
 }
 
-section > p:last-child {
-  text-align: center !important;
-  margin-top: 1rem !important;
-  font-size: 0.95rem !important;
-}
 
 /* -------------------- TYPOGRAPHY -------------------- */
 h1 {

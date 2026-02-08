@@ -1,6 +1,7 @@
 title: Cory Pleasance
 description: Data Science & AI Student | LLM Security Research | Mechanistic Interpretability
 theme: jekyll-theme-minimal
+excerpt_separator: "<!--more-->"
 url: https://cpleasance.github.io
 baseurl: ""  # Leave empty if repo is named cpleasance.github.io
 logo: /assets/images/avatar.png

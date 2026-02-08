@@ -6,7 +6,9 @@ tags: [game-development, roblox, lua, software-engineering, architecture]
 ---
 ## Overview
 
-This is my first venture into game development using Lua and Roblox Studio. As a data science and AI student, I decided to branch out and explore a completely different domain, and it's been surprisingly rewarding. Today's session focused on building foundational systems for player input, interactions, and time management. The goal was to create a unified, cross-platform experience that works seamlessly on PC, console, and mobile devices.
+This is my first venture into game development using Lua and Roblox Studio. As a data science and AI student, I decided to branch out and explore a completely different domain, and it's been surprisingly rewarding. Today's session focused on building foundational systems for player input, interactions, and time management.
+
+<!--more-->
 
 ---
 
