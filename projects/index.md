@@ -10,7 +10,7 @@ description: "Portfolio of data science, machine learning, and systems programmi
 ---
 
 ## Hull Tactical Market Prediction
-**Python · LightGBM · CatBoost · Optuna · scikit-learn** · *Dec 2025 – Present*
+**Python · LightGBM · CatBoost · scikit-learn** · *Dec 2025 – Present*
 
 Building ensemble models for S&P 500 directional forecasting in a Kaggle competition (1,000+ participants), combining gradient-boosted trees with custom feature engineering on macro-economic indicators. Implemented walk-forward and purged cross-validation to prevent lookahead bias, with hyperparameter tuning via Optuna using custom financial evaluation metrics.
 
@@ -47,9 +47,7 @@ Course management system using BSTs for O(log n) student lookups, quicksort for 
 
 ## In Progress
 
-**LLM Red Teaming** · University research on adversarial testing, mechanistic interpretability, and alignment evaluation across LLM architectures
-
-**Distributed Training Framework** · Multi-GPU/TPU training tools for large-scale model training
+**LLM Red Teaming** · Training linear probes across 32 layers of Qwen and Mistral to locate safety-critical decision boundaries; building a PAIR-style multi-model adversarial council where 3+ LLM architectures iteratively generate and refine attacks through cross-model feedback loops
 
 ---
 

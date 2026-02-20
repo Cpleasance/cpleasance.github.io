@@ -13,9 +13,9 @@ Researching LLM security and mechanistic interpretability through adversarial te
 
 ## Now
 
-- Research assistant studying LLM safety — training linear probes on transformer layer activations and co-authoring a paper on mechanistic interpretability
-- Competing in Hull Tactical S&P 500 forecasting challenge on Kaggle
-- Year 2 of BSc Data Science & AI, on track for First Class Honours
+- Research assistant studying LLM safety — training linear probes across 32 layers of Qwen and Mistral models, building a PAIR-style multi-model adversarial council, and co-authoring a paper on LLM safety evaluation with Dr. Stankaitis
+- Competing in Hull Tactical S&P 500 forecasting challenge on Kaggle (1,000+ participants)
+- Year 2 of BSc Data Science & AI, on track for First Class Honours (avg: 80%+)
 
 ## Latest Post
 
