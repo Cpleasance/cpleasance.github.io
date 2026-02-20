@@ -9,6 +9,11 @@ logo: /assets/images/avatar.png
 # SEO and Social
 author: Cory Pleasance
 lang: en-US
+social:
+  links:
+    - https://github.com/Cpleasance
+    - https://www.linkedin.com/in/cory-pleasance-b99b80205/
+    - https://www.kaggle.com/cpleasance
 
 # Social sharing image
 image: /assets/images/og-banner.svg

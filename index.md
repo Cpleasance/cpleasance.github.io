@@ -9,7 +9,7 @@ description: "Cory Pleasance - Data Science & AI student at University of Stirli
 
 **Data Science & AI** · University of Stirling
 
-Researching LLM security and mechanistic interpretability through adversarial testing and red teaming. Background in distributed systems, HPC, and low-level programming.
+Researching LLM security and mechanistic interpretability through adversarial testing and red teaming. Background in HPC, ML pipelines, and low-level systems programming.
 
 ## Now
 

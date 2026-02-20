@@ -12,7 +12,7 @@ description: "Portfolio of data science, machine learning, and systems programmi
 ## Hull Tactical Market Prediction
 **Python · LightGBM · CatBoost · scikit-learn** · *Dec 2025 – Present*
 
-Building ensemble models for S&P 500 directional forecasting in a Kaggle competition (1,000+ participants), combining gradient-boosted trees with custom feature engineering on macro-economic indicators. Implemented walk-forward and purged cross-validation to prevent lookahead bias, with hyperparameter tuning via Optuna using custom financial evaluation metrics.
+Building ensemble models for S&P 500 directional forecasting in a Kaggle competition (1,000+ participants), combining gradient-boosted trees with custom feature engineering on macro-economic indicators. Implemented walk-forward and purged cross-validation to prevent lookahead bias, with hyperparameter tuning using custom financial evaluation metrics.
 
 [Kaggle](https://www.kaggle.com/cpleasance){: .btn-kaggle target="_blank" rel="noopener noreferrer"}
 
@@ -41,7 +41,7 @@ Built a bootloader and kernel from scratch in x86 Assembly that initialises the 
 
 Course management system using BSTs for O(log n) student lookups, quicksort for ranked listings, and directed graph traversal with cycle detection for prerequisite validation.
 
-[Private Repo](javascript:void(0)){: .btn-private}
+<span class="btn-private" aria-label="Private repository — not publicly available">Private Repo</span>
 
 ---
 
