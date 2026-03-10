@@ -25,7 +25,7 @@ Researching LLM security through adversarial testing and red teaming. Background
 
 ---
 
-[CV](/cv/){: .btn-primary} [Projects](/projects/){: .btn-primary} [Blog](/blog/){: .btn-primary}
+[Contact](/contact/){: .btn-primary} [Projects](/projects/){: .btn-primary} [Blog](/blog/){: .btn-primary}
 
 ---
 
@@ -44,8 +44,8 @@ Researching LLM security through adversarial testing and red teaming. Background
     <img src="/assets/images/icons/kaggle.svg" alt="Kaggle profile icon" class="social-icon">
     Kaggle
   </a>
-  <a href="mailto:corypleasance05@gmail.com" class="social-link">
-    <img src="/assets/images/icons/gmail.svg" alt="Email icon" class="social-icon">
-    Email
+  <a href="/contact/" class="social-link">
+    <img src="/assets/images/icons/gmail.svg" alt="Contact icon" class="social-icon">
+    Contact
   </a>
 </div>

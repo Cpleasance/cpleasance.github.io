@@ -843,14 +843,20 @@ body.drawer-open {
     font-size: 0.85rem !important;
   }
 
-  /* Buttons */
+  /* Buttons - full width and centered on mobile */
   .btn-primary,
-  a.btn-primary {
+  a.btn-primary,
+  .btn-github,
+  a.btn-github,
+  .btn-kaggle,
+  a.btn-kaggle {
     display: block !important;
     width: 100% !important;
-    margin: 0 0 0.8rem 0 !important;
+    max-width: 300px !important;
+    margin: 0 auto 0.8rem auto !important;
     padding: 0.7rem 1rem !important;
     font-size: 0.95rem !important;
+    text-align: center !important;
   }
 
   /* Post header mobile styles */
@@ -1260,6 +1266,60 @@ a.nav-item:hover {
 .rss-link a {
   color: var(--primary-color) !important;
   font-weight: 500 !important;
+}
+
+/* -------------------- CONTACT FORM -------------------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--primary-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--shadow-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-submit {
+  align-self: flex-start;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 /* -------------------- PRINT STYLES -------------------- */
