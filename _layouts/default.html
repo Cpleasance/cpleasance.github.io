@@ -2,7 +2,6 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0366d6" id="theme-color-meta">
 
@@ -24,12 +23,11 @@
     <link rel="stylesheet" href="{{ "/assets/css/custom.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | relative_url }}">
     <link rel="icon" type="image/png" href="{{ site.logo | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include analytics.html %}
+{% include analytics.html %}
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
     <!-- Mobile Navigation Bar -->
     <nav class="mobile-nav" id="mobile-nav">
       <a href="{{ "/" | absolute_url }}" class="mobile-nav-brand">
@@ -59,8 +57,8 @@
         <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
       </div>
       <div class="drawer-content">
-        <nav class="drawer-nav">
-          <a href="{{ "/" | absolute_url }}" class="drawer-nav-link">
+        <nav class="drawer-nav" aria-label="Mobile navigation">
+          <a href="{{ "/" | absolute_url }}" class="drawer-nav-link{% if page.url == "/" %} drawer-nav-active{% endif %}"{% if page.url == "/" %} aria-current="page"{% endif %}>
             <span class="drawer-nav-icon">&#8962;</span>
             <span>Home</span>
           </a>
@@ -68,11 +66,11 @@
             <span class="drawer-nav-icon">&#9993;</span>
             <span>Contact</span>
           </a>
-          <a href="{{ "/projects/" | relative_url }}" class="drawer-nav-link">
+          <a href="{{ "/projects/" | relative_url }}" class="drawer-nav-link{% if page.url == "/projects/" or page.url == "/projects" %} drawer-nav-active{% endif %}"{% if page.url == "/projects/" or page.url == "/projects" %} aria-current="page"{% endif %}>
             <span class="drawer-nav-icon">&#9881;</span>
             <span>Projects</span>
           </a>
-          <a href="{{ "/blog/" | relative_url }}" class="drawer-nav-link">
+          <a href="{{ "/blog/" | relative_url }}" class="drawer-nav-link{% if page.url == "/blog/" or page.url == "/blog" or page.layout == "post" %} drawer-nav-active{% endif %}"{% if page.url == "/blog/" or page.url == "/blog" or page.layout == "post" %} aria-current="page"{% endif %}>
             <span class="drawer-nav-icon">&#9997;</span>
             <span>Blog</span>
           </a>
@@ -100,7 +98,7 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <p class="status-badge">Last updated: 16th January 2026</p>
+        <p class="status-badge">Last updated: {{ site.time | date: "%B %Y" }}</p>
 
         <!-- Theme toggle button -->
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
@@ -117,7 +115,7 @@
       </header>
 
       <!-- Main Content -->
-      <section>
+      <section id="main-content">
         {{ content }}
       </section>
     </div>
