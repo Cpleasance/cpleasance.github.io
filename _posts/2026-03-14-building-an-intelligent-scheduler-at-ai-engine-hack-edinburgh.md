@@ -6,7 +6,7 @@ tags: [hackathon, python, flask, scheduling, algorithms, web-development]
 ---
 ## Overview
 
-On March 14th, Danny Macpherson and I competed in AI Engine Hack Edinburgh — a one-day hackathon running from 9am to 8pm, with a £1,000 prize from Tomoro AI on the line. We didn't win, but we shipped something I'm genuinely proud of: a full-stack intelligent workflow scheduling platform built from scratch in under 12 hours.
+On March 14th, Danny Macpherson and I competed in AI Engine Hack Edinburgh — a one-day hackathon with a £1,000 prize from Tomoro AI on the line. We didn't win, but we shipped something I'm genuinely proud of: a full-stack intelligent workflow scheduling platform built from scratch in 5 hours of actual build time.
 
 <!--more-->
 
@@ -68,7 +68,7 @@ This problem has a lot in common with job scheduling algorithms I've studied in 
 **Frontend:** Vanilla JavaScript SPA
 **Database:** SQLite (with PostgreSQL-compatible schema)
 
-We made a deliberate choice to avoid heavy frameworks on the frontend. With 12 hours on the clock, the overhead of setting up a React or Vue project — even with Vite — wasn't worth it. Vanilla JS with CSS Grid gave us enough to build a functional, clean interface without configuration overhead.
+We made a deliberate choice to avoid heavy frameworks on the frontend. With only 5 hours to build, the overhead of setting up a React or Vue project — even with Vite — wasn't worth it. Vanilla JS with CSS Grid gave us enough to build a functional, clean interface without configuration overhead.
 
 Flask was the right choice for the same reason: low ceremony, fast to set up, easy to reason about. SQLAlchemy gave us proper ORM-backed transactions, which mattered for the ACID compliance we needed to prevent double-booking.
 
