@@ -40,4 +40,4 @@ Have a question, want to collaborate, or just want to say hello? Fill in the for
 
 ---
 
-<p class="nav-footer"><a href="#top">Back to Top</a></p>
+{% include footer.html %}

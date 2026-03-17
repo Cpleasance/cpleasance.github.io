@@ -9,6 +9,15 @@ description: "Portfolio of data science, machine learning, and systems programmi
 
 ---
 
+## Scheduler — AI Engine Hack Edinburgh
+**Python · Flask · SQLAlchemy · JavaScript** · *March 2026*
+
+Built at the AI Engine Hack Edinburgh hackathon (£1,000 prize pool). Intelligent workflow scheduling platform that dynamically allocates tasks to employees based on skills, availability, priority, and real-time conflict resolution. Features a multi-factor priority engine, cascade reassignment when appointments overrun, configurable buffer zones, and ACID-compliant transaction handling to prevent double-booking. Includes employee utilisation analytics and demand forecasting.
+
+[GitHub](https://github.com/Cpleasance/Hackathon){: .btn-github target="_blank" rel="noopener noreferrer"}
+
+---
+
 ## Hull Tactical Market Prediction
 **Python · LightGBM · CatBoost · scikit-learn** · *Dec 2025 – Present*
 

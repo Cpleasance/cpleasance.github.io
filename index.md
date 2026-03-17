@@ -19,6 +19,13 @@ Researching LLM security and mechanistic interpretability through adversarial te
 
 ## Latest Post
 
+{% assign latest = site.posts | first %}
+{% if latest %}
+[{{ latest.title }}]({{ latest.url }}) · *{{ latest.date | date: "%B %d, %Y" }}*
+{% else %}
+*No posts yet — [check back soon](/blog/).*
+{% endif %}
+
 [Contact](/contact/){: .btn-primary} [Projects](/projects/){: .btn-primary} [Blog](/blog/){: .btn-primary}
 
 ## Connect
@@ -41,3 +48,5 @@ Researching LLM security and mechanistic interpretability through adversarial te
     Contact
   </a>
 </div>
+
+{% include footer.html %}

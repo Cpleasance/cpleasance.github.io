@@ -62,7 +62,7 @@
             <span class="drawer-nav-icon">&#8962;</span>
             <span>Home</span>
           </a>
-          <a href="{{ "/contact/" | relative_url }}" class="drawer-nav-link">
+          <a href="{{ "/contact/" | relative_url }}" class="drawer-nav-link{% if page.url == "/contact/" or page.url == "/contact" %} drawer-nav-active{% endif %}"{% if page.url == "/contact/" or page.url == "/contact" %} aria-current="page"{% endif %}>
             <span class="drawer-nav-icon">&#9993;</span>
             <span>Contact</span>
           </a>
